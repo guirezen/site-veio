@@ -12,6 +12,10 @@ export const Navbar = styled.nav`
     height: 100px;
 `
 
+export const LogoConteiner = styled.div`
+    width: 20%;
+`
+
 export const RedSquary = styled.div`
     background-color: #b85151;
     width: 101px;
@@ -21,23 +25,31 @@ export const RedSquary = styled.div`
     align-items: end;
     margin-left: 38px;
 
-    div {
-        font-size: 20px;
-        margin-bottom: 17px;
-    }
-
     h4 {
         font-weight: lighter;
         letter-spacing: 3px;
         font-size: 15px;
+        margin-bottom: 17px;
     }
+`
+
+export const ListConteiner = styled.div`
+    height: 100%;
+    align-items: end;
+    justify-content: end;
+    display: flex;
+    width: 100%;
+    max-width: 670px;
+    margin-right: 50px;
 `
 
 export const List = styled.ul`
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: inherit;
+    width: 100%;
+    justify-content: space-between;
 
     div {
         display: inherit;
@@ -45,8 +57,11 @@ export const List = styled.ul`
 `
 
 export const ItensList = styled.li`
-    /* list-style: none; */
-    margin: 10px;
+    font-size: 12px;
+    //margin: 10px;
+    margin-left: 42px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
     cursor: pointer;
 `
 

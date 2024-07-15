@@ -1,18 +1,18 @@
-import { ConteinerInsideTitle, ConteinerOutTitle, HeaderStyled, ItensList, List, MainTitle, Navbar, RedSquary } from "./styles";
+import { ConteinerInsideTitle, ConteinerOutTitle, HeaderStyled, ItensList, List, ListConteiner, LogoConteiner, MainTitle, Navbar, RedSquary } from "./styles";
 
 export default function Header() {
 
     return (
         <HeaderStyled>
             <Navbar>
-                <RedSquary>
-                    <div className="red-square">
+                <LogoConteiner>
+                    <RedSquary>
                         <h4>
                             VÉI<b>O</b>
                         </h4>
-                    </div>
-                </RedSquary>
-                <div>
+                    </RedSquary>
+                </LogoConteiner>
+                <ListConteiner>
                     <List>
                         <div>
                             <ItensList>SOBRE</ItensList>
@@ -23,7 +23,7 @@ export default function Header() {
                             <ItensList>CONTATO</ItensList>
                         </div>
                     </List>
-                </div>
+                </ListConteiner>
             </Navbar>
             <ConteinerOutTitle>
                 <ConteinerInsideTitle>
