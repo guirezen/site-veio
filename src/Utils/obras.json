@@ -1,0 +1,36 @@
+{
+    "gallery": [
+        {
+            "id": 1,
+            "url": "src/Assets/Iranian_handicraft.jpg"
+        },
+        {
+            "id": 2,
+            "url": "src/Assets/Iranian_handicraft.jpg"
+        },
+        {
+            "id": 3,
+            "url": "src/Assets/Iranian_handicraft.jpg"
+        },
+        {
+            "id": 4,
+            "url": "src/Assets/Iranian_handicraft.jpg"
+        },
+        {
+            "id": 5,
+            "url": "src/Assets/Iranian_handicraft.jpg"
+        },
+        {
+            "id": 6,
+            "url": "src/Assets/Iranian_handicraft.jpg"
+        },
+        {
+            "id": 7,
+            "url": "src/Assets/Iranian_handicraft.jpg"
+        },
+        {
+            "id": 8,
+            "url": "src/Assets/Iranian_handicraft.jpg"
+        }
+    ]
+}

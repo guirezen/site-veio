@@ -1,5 +1,7 @@
+import DescriptionStem from "../../Components/DescriptionStem";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Head";
+import MainHome from "../../Components/MainHome";
 
 export default function Home() {
     
@@ -8,7 +10,10 @@ export default function Home() {
             <div>
                 <Header />
             </div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quaerat quas natus! Fuga perspiciatis aperiam quaerat quisquam veniam totam debitis facere minus distinctio, ipsum eveniet, deleniti quos reprehenderit ab iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero commodi modi delectus tempora nemo? Ratione architecto, eligendi aliquam, eos nemo facilis ipsa officia reiciendis quis voluptatum maxime consectetur natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia beatae quas ea soluta nemo consequuntur quasi qui modi eligendi, culpa debitis deserunt doloremque aut tempore, praesentium eius, mollitia nihil!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quaerat quas natus! Fuga perspiciatis aperiam quaerat quisquam veniam totam debitis facere minus distinctio, ipsum eveniet, deleniti quos reprehenderit ab iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero commodi modi delectus tempora nemo? Ratione architecto, eligendi aliquam, eos nemo facilis ipsa officia reiciendis quis voluptatum maxime consectetur natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia beatae quas ea soluta nemo consequuntur quasi qui modi eligendi, culpa debitis deserunt doloremque aut tempore, praesentium eius, mollitia nihil!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quaerat quas natus! Fuga perspiciatis aperiam quaerat quisquam veniam totam debitis facere minus distinctio, ipsum eveniet, deleniti quos reprehenderit ab iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero commodi modi delectus tempora nemo? Ratione architecto, eligendi aliquam, eos nemo facilis ipsa officia reiciendis quis voluptatum maxime consectetur natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia beatae quas ea soluta nemo consequuntur quasi qui modi eligendi, culpa debitis deserunt doloremque aut tempore, praesentium eius, mollitia nihil!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quaerat quas natus! Fuga perspiciatis aperiam quaerat quisquam veniam totam debitis facere minus distinctio, ipsum eveniet, deleniti quos reprehenderit ab iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero commodi modi delectus tempora nemo? Ratione architecto, eligendi aliquam, eos nemo facilis ipsa officia reiciendis quis voluptatum maxime consectetur natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia beatae quas ea soluta nemo consequuntur quasi qui modi eligendi, culpa debitis deserunt doloremque aut tempore, praesentium eius, mollitia nihil!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quaerat quas natus! Fuga perspiciatis aperiam quaerat quisquam veniam totam debitis facere minus distinctio, ipsum eveniet, deleniti quos reprehenderit ab iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero commodi modi delectus tempora nemo? Ratione architecto, eligendi aliquam, eos nemo facilis ipsa officia reiciendis quis voluptatum maxime consectetur natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia beatae quas ea soluta nemo consequuntur quasi qui modi eligendi, culpa debitis deserunt doloremque aut tempore, praesentium eius, mollitia nihil!
+            <div>
+                <MainHome />
+                <DescriptionStem />
+            </div>
             <div>
                 <Footer />
             </div>
