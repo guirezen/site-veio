@@ -1,3 +1,4 @@
+import { makeStyles } from "@mui/material";
 import styled from "styled-components";
 
 export const Section = styled.section`
@@ -40,6 +41,10 @@ export const ImgObra = styled.img`
     margin-right: 97px;
 `
 
+export const OutDescribeConteiner = styled.div`
+    height: 250px;
+`
+
 export const ConteinerTitulo = styled.div`
     margin-bottom: 16px;
 
@@ -54,4 +59,13 @@ export const ConteinerDescricao = styled.div`
     font-size: 18px;
     font-family: Montserrat;
     color: #7b7b7b;
+`
+
+export const ConteinerIndicadores = styled.div`
+    margin-top: 48px;
+
+    .indicadores {
+        display: flex;
+        justify-content: end;
+    }
 `

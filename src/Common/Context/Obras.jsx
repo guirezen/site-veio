@@ -6,12 +6,15 @@ ObrasContext.displayName = "Obras";
 
 export const ObrasProvider = ({ children }) => {
     const [obrasList, setObrasList] = useState([])
+    const [stemType, setStemType] = useState(obras.stemtypes)
 
     return (
         <ObrasContext.Provider
             value={{
                 obrasList,
-                setObrasList
+                setObrasList,
+                stemType,
+                setStemType
             }}
         >
             {children}
@@ -22,7 +25,10 @@ export const ObrasProvider = ({ children }) => {
 export const useObrasContext = () => {
     const {
         obrasList,
-        setObrasList
+        setObrasList,
+        stemType,
+        setStemType
+
     } = useContext(ObrasContext)
 
     const setObras = async () => {
@@ -30,10 +36,29 @@ export const useObrasContext = () => {
         console.log(obrasList)
     }
 
+    const setStemTypes = async () => {
+        await setStemType(obras.stemtypes)
+        console.log(stemType)
+    }
+
+    const formatTittle = (tittle) => {
+        const [firstPart, secondPart] = tittle.split(' ')
+
+        return (
+            <>
+                {firstPart} <br /> {secondPart}
+            </>
+        )
+    }
+
 
     return {
         obrasList,
         setObrasList,
-        setObras
+        setObras,
+        stemType,
+        setStemType,
+        setStemTypes,
+        formatTittle
     }
 }

@@ -32,5 +32,19 @@
             "id": 8,
             "url": "src/Assets/Iranian_handicraft.jpg"
         }
+    ],
+    "stemtypes": [
+        {
+            "id": 0,
+            "imagem": "src/Assets/Iranian_handicraft.jpg",
+            "tipoTronco": "TRONCOS FECHADOS",
+            "descricao": "Sua obras movimentam-se em duas direções : as obras de troncos fechados e as de troncos abertos. As de troncos fechados, geralmente maiores, são provenientes da vegetação morta, galhos ou raízes, os quais são feitas pequenas intervenções, com a intenção de preservar da natureza o seu caráter expressivo, surgindo assim, formas de animais, homens e figuras nunca vistas."
+        },
+        {
+            "id": 1,
+            "imagem": "src/Assets/Iranian_handicraft.jpg",
+            "tipoTronco": "TRONCOS ABERTOS",
+            "descricao": "Sua obras movimentam-se em duas direções : as obras de troncos fechados e as de troncos abertos. As de troncos fechados, geralmente maiores, são provenientes da vegetação morta, galhos ou raízes, os quais são feitas pequenas intervenções, com a intenção de preservar da natureza o seu caráter expressivo, surgindo assim, formas de animais, homens e figuras nunca vistas."
+        }
     ]
 }
