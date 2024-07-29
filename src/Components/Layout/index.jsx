@@ -12,7 +12,6 @@ export default function Layout({ children }) {
             </div>
             <div >
                 <Outlet />
-                {children}
             </div>
             <div>
                 <Footer />
