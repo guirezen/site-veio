@@ -58,11 +58,16 @@ export const List = styled.ul`
 
 export const ItensList = styled.li`
     font-size: 12px;
-    //margin: 10px;
+    padding: 10px 17px;
     margin-left: 42px;
     margin-bottom: 18px;
     letter-spacing: 2px;
+    border: 1px solid transparent;
     cursor: pointer;
+
+    &:hover {
+        border: 1px solid #B85151;
+    }
 `
 
 export const ConteinerOutTitle = styled.div`

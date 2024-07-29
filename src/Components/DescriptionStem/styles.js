@@ -67,5 +67,6 @@ export const ConteinerIndicadores = styled.div`
     .indicadores {
         display: flex;
         justify-content: end;
+        background-color: transparent;
     }
 `
