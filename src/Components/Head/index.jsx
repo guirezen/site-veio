@@ -1,4 +1,5 @@
-import { ConteinerInsideTitle, ConteinerOutTitle, HeaderStyled, ItensList, List, ListConteiner, LogoConteiner, MainTitle, Navbar, RedSquary } from "./styles";
+import { Link } from "react-router-dom";
+import { HeaderStyled, ItensList, List, ListConteiner, LogoConteiner, Navbar, RedSquary } from "./styles";
 
 export default function Header() {
 
@@ -15,7 +16,12 @@ export default function Header() {
                 <ListConteiner>
                     <List>
                         <div>
-                            <ItensList>SOBRE</ItensList>
+                            <Link 
+                                className="botoes-menu-superior"
+                                to={'/sobre'}
+                            >
+                                <ItensList>SOBRE</ItensList>
+                            </Link>
                             <ItensList>OBRAS</ItensList>
                         </div>
                         <div>
@@ -25,16 +31,6 @@ export default function Header() {
                     </List>
                 </ListConteiner>
             </Navbar>
-            <ConteinerOutTitle>
-                <ConteinerInsideTitle>
-                    <MainTitle>
-                        O<br />
-                        IMAGINÁ-<br />
-                        RIO DE<br />
-                        <span>VÉI<b>O</b></span>
-                    </MainTitle>
-                </ConteinerInsideTitle>
-            </ConteinerOutTitle>
         </HeaderStyled>
     )
 }

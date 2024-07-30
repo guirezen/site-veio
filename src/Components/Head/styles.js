@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
     width: 100%;
-    height: 849px;
 `
 
 export const Navbar = styled.nav`
@@ -54,6 +53,11 @@ export const List = styled.ul`
     div {
         display: inherit;
     }
+
+    .botoes-menu-superior {
+        text-decoration: none;
+        color: inherit;
+    }
 `
 
 export const ItensList = styled.li`
@@ -67,27 +71,5 @@ export const ItensList = styled.li`
 
     &:hover {
         border: 1px solid #B85151;
-    }
-`
-
-export const ConteinerOutTitle = styled.div`
-    width: 100%;
-    height: 350px;
-    display: flex;
-    align-items: end;
-`
-
-export const ConteinerInsideTitle = styled.div`
-    width: 40%;
-`
-export const MainTitle = styled.h1`
-    letter-spacing: 3px;
-    color: #D2D2D2;
-    text-align: right;
-    font-size: 39px;
-    font-weight: lighter;
-
-    span {
-        color: #B85151;
     }
 `
