@@ -8,15 +8,19 @@ export default function Header() {
             <Navbar>
                 <LogoConteiner>
                     <RedSquary>
-                        <h4>
-                            VÉI<b>O</b>
-                        </h4>
+                        <Link
+                            className="botoes-menu-superior"
+                            to={'/home'}>
+                            <h4>
+                                VÉI<b>O</b>
+                            </h4>
+                        </Link>
                     </RedSquary>
                 </LogoConteiner>
                 <ListConteiner>
                     <List>
                         <div>
-                            <Link 
+                            <Link
                                 className="botoes-menu-superior"
                                 to={'/sobre'}
                             >
@@ -25,7 +29,12 @@ export default function Header() {
                             <ItensList>OBRAS</ItensList>
                         </div>
                         <div>
-                            <ItensList>PELO MUNDO</ItensList>
+                            <Link
+                                className="botoes-menu-superior"
+                                to={'/pelomundo'}
+                            >
+                                <ItensList>PELO MUNDO</ItensList>
+                            </Link>
                             <ItensList>CONTATO</ItensList>
                         </div>
                     </List>

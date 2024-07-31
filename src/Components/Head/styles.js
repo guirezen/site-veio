@@ -9,6 +9,11 @@ export const Navbar = styled.nav`
     justify-content: space-between;
     align-items: center;
     height: 100px;
+
+    .botoes-menu-superior {
+        text-decoration: none;
+        color: inherit;
+    }
 `
 
 export const LogoConteiner = styled.div`
@@ -23,6 +28,7 @@ export const RedSquary = styled.div`
     justify-content: center;
     align-items: end;
     margin-left: 38px;
+    cursor: pointer;
 
     h4 {
         font-weight: lighter;
@@ -52,11 +58,6 @@ export const List = styled.ul`
 
     div {
         display: inherit;
-    }
-
-    .botoes-menu-superior {
-        text-decoration: none;
-        color: inherit;
     }
 `
 
