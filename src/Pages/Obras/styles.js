@@ -38,6 +38,7 @@ export const ConteinerGrid = styled.div`
     img {
         width: 100%;
         height: 315px;
+        cursor: pointer;
     }
 `
 

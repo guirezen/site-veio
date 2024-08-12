@@ -15,7 +15,12 @@ export default function ObrasPage() {
 
     useEffect(() => {
         filterObras()
+        setCurrentPage(1)
     }, [selectedFilter])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [displayedObras])
 
     return (
         <ConteinerMain>

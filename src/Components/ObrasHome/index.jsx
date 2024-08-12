@@ -16,7 +16,9 @@ export default function ObrasHome() {
                     </TitleConteiner>
                     <GridObras>
                         {obrasList.slice(0, 8).map(obra => (
-                            <ImgObra src={obra.url} />
+                            <div>
+                                <ImgObra src={obra.url} />
+                            </div>
                         ))}
                     </GridObras>
                     <div>

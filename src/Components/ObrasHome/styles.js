@@ -26,11 +26,25 @@ export const GridObras = styled.div`
     max-width: 1088px;
     width: 100%;
     justify-content: center;
+
+    div {
+        width: 266px;
+        height: 398px;
+        overflow: hidden;
+    }
 `
 
 export const ImgObra = styled.img`
     width: 266px;
     height: 398px;
+    filter: brightness(53%);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(100%);
+        transform: scale(1.1);
+    }
 `
 
 export const ButtonAllWorks = styled.button`
