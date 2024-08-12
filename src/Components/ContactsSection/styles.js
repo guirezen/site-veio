@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TitleConteiner = styled.div`
     width: 100%;
     text-align: center;
-    margin-top: 131px;
+    margin-top: 30px;
 
     h1 {
         font-weight: lighter;

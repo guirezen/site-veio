@@ -2,15 +2,15 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
     @font-face {
-        font-family: 'Lulu One';
-        src: url('/fonts/lulu-one.ttf');
+        font-family: 'Neoris';
+        src: url('/fonts/neoris/TT Neoris Trial ExtraLight.ttf');
         font-weight: normal;
         font-style: normal;
     }
     @font-face {
-        font-family: 'Ariane Coachella';
-        src: url(/fonts/ArianeCoachella-Regular.ttf);
-        font-weight: normal;
+        font-family: 'Neoris';
+        src: url('/fonts/neoris/TT Neoris Trial ExtraBold.ttf');
+        font-weight: bold;
         font-style: normal;
     }
 
@@ -20,6 +20,6 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: 'Ariane Coachella';
+        font-family: 'Neoris';
     }
 `

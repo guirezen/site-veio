@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HeaderStyled, ItensList, List, ListConteiner, LogoConteiner, Navbar, RedSquary } from "./styles";
 
 export default function Header() {
+    const param = useLocation().pathname
 
     return (
-        <HeaderStyled>
+        <HeaderStyled pathname={param}>
             <Navbar>
                 <LogoConteiner>
                     <RedSquary>
@@ -18,7 +19,7 @@ export default function Header() {
                     </RedSquary>
                 </LogoConteiner>
                 <ListConteiner>
-                    <List>
+                    <List pathname={param}>
                         <div>
                             <Link
                                 className="botoes-menu-superior"
@@ -26,7 +27,12 @@ export default function Header() {
                             >
                                 <ItensList>SOBRE</ItensList>
                             </Link>
-                            <ItensList>OBRAS</ItensList>
+                            <Link
+                                className="botoes-menu-superior"
+                                to={'/obras'}
+                            >
+                                <ItensList>OBRAS</ItensList>
+                            </Link>
                         </div>
                         <div>
                             <Link

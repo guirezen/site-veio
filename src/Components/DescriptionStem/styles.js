@@ -5,6 +5,8 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     width: 100%;
+    background-color: #303030;
+    padding-bottom: 131px;
 `
 
 export const ConteinerCarousel = styled.div`
@@ -36,8 +38,8 @@ export const ConteinerSeta = styled.div`
 `
 
 export const ImgObra = styled.img`
-    width: 288px;
-    height: 371px;
+    width: 266px;
+    height: 398px;
     margin-right: 97px;
 `
 
@@ -51,6 +53,15 @@ export const ConteinerTitulo = styled.div`
     h1 {
         font-size: 23px;
         font-weight: lighter;
+        letter-spacing: 3px;
+    }
+
+    .titulo-part-1 {
+        color: #fff;
+    }
+
+    .titulo-part-2 {
+        color: #b55150;
     }
 `
 

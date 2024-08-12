@@ -1,6 +1,6 @@
 import ContactsSection from "../../Components/ContactsSection";
 import DescriptionStem from "../../Components/DescriptionStem";
-import MainHome from "../../Components/MainHome";
+import ObrasHome from "../../Components/ObrasHome";
 import { ConteinerInsideTitle, ConteinerOutTitle, MainTitle } from "./styles";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
                     </MainTitle>
                 </ConteinerInsideTitle>
             </ConteinerOutTitle>
-            <MainHome />
+            <ObrasHome />
             <DescriptionStem />
             <ContactsSection />
         </div>

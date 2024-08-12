@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const GridConteiner = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+`
+
 export const TitleConteiner = styled.div`
     max-width: 1088px;
     width: 100%;
@@ -10,12 +17,6 @@ export const TitleConteiner = styled.div`
         font-size: 29px;
         letter-spacing: 4px;
     }
-`
-
-export const GridConteiner = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 `
 
 export const GridObras = styled.div`

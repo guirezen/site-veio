@@ -1,14 +1,9 @@
-import { useEffect } from "react"
+import { Link } from "react-router-dom"
 import { useObrasContext } from "../../Common/Context/Obras"
 import { ButtonAllWorks, GridConteiner, GridObras, ImgObra, TitleConteiner } from "./styles"
 
-export default function MainHome() {
-    const { obrasList, setObras } = useObrasContext()
-
-
-    useEffect(() => {
-        setObras()
-    }, [])
+export default function ObrasHome() {
+    const { obrasList } = useObrasContext()
 
     return (
         <section>
@@ -20,12 +15,14 @@ export default function MainHome() {
                         </h1>
                     </TitleConteiner>
                     <GridObras>
-                        {obrasList.map(obra => (
+                        {obrasList.slice(0, 8).map(obra => (
                             <ImgObra src={obra.url} />
                         ))}
                     </GridObras>
                     <div>
-                        <ButtonAllWorks>VER TODAS</ButtonAllWorks>
+                        <Link to={'/obras'}>
+                            <ButtonAllWorks>VER TODAS</ButtonAllWorks>
+                        </Link>
                     </div>
                 </GridConteiner>
             </div>
