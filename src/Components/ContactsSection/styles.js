@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const ConteinerSection = styled.div`
+    background-color: #b85151;
+    padding: 30px 0;
+`
+
 export const TitleConteiner = styled.div`
     width: 100%;
     text-align: center;

@@ -20,6 +20,7 @@ export const TitleConteiner = styled.div`
         font-size: 40px;
         color: #b85151;
         margin-bottom: 11px;
+        font-family: 'Montserrat';
     }
 
     span {
@@ -62,8 +63,12 @@ export const ConteinerInConteudo = styled.div`
     span {
         color: #707070;
         font-style: italic;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-size: 18px;
+    }
+
+    p {
+        font-family: 'Montserrat';
     }
 `
 

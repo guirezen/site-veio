@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom"
 import { useObrasContext } from "../../Common/Context/Obras"
 import { ButtonAllWorks, GridConteiner, GridObras, ImgObra, TitleConteiner } from "./styles"
+import PopupObra from "../PopupObra"
 
 export default function ObrasHome() {
-    const { obrasList } = useObrasContext()
+    const { 
+        obrasList,
+        handleOpenPopUp
+     } = useObrasContext()
 
     return (
         <section>
@@ -16,7 +20,7 @@ export default function ObrasHome() {
                     </TitleConteiner>
                     <GridObras>
                         {obrasList.slice(0, 8).map(obra => (
-                            <div>
+                            <div onClick={handleOpenPopUp}>
                                 <ImgObra src={obra.url} />
                             </div>
                         ))}
@@ -28,6 +32,7 @@ export default function ObrasHome() {
                     </div>
                 </GridConteiner>
             </div>
+            <PopupObra />
         </section>
     )
 }

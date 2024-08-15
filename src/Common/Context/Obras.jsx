@@ -10,6 +10,7 @@ export const ObrasProvider = ({ children }) => {
     const [selectedFilter, setSelectedFilter] = useState('todos')
     const [currentPage, setCurrentPage] = useState(1)
     const [filteredObras, setFilteredObras] = useState([])
+    const [openPopUp, setOpenPopUp] = useState(false);
 
     return (
         <ObrasContext.Provider
@@ -23,7 +24,9 @@ export const ObrasProvider = ({ children }) => {
                 currentPage,
                 setCurrentPage,
                 filteredObras,
-                setFilteredObras
+                setFilteredObras,
+                openPopUp,
+                setOpenPopUp
             }}
         >
             {children}
@@ -42,7 +45,9 @@ export const useObrasContext = () => {
         currentPage,
         setCurrentPage,
         filteredObras,
-        setFilteredObras
+        setFilteredObras,
+        openPopUp,
+        setOpenPopUp
     } = useContext(ObrasContext)
 
     const setStemTypes = () => {
@@ -77,6 +82,15 @@ export const useObrasContext = () => {
         console.log(filteredObras)
     }
 
+    const handleOpenPopUp = () => {
+        setOpenPopUp(true);
+        console.log(openPopUp)
+    };
+    const handleClosePopUp = () => {
+        setOpenPopUp(false);
+        console.log(openPopUp)
+    };
+
     const allPages = Math.ceil(filteredObras.length / 20)
     const obrasPerPage = 20
     const startIndex = (currentPage - 1) * obrasPerPage
@@ -98,6 +112,10 @@ export const useObrasContext = () => {
         setCurrentPage,
         filterObras,
         allPages,
-        displayedObras
+        displayedObras,
+        openPopUp,
+        setOpenPopUp,
+        handleOpenPopUp,
+        handleClosePopUp
     }
 }

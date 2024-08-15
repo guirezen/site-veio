@@ -1,11 +1,11 @@
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import { Buttons, ButtonsConteiner, ContactConteiner, TitleConteiner } from "./styles";
+import { Buttons, ButtonsConteiner, ContactConteiner, ConteinerSection, TitleConteiner } from "./styles";
 
 export default function ContactsSection() {
 
     return (
-        <section>
+        <ConteinerSection>
             <div>
                 <TitleConteiner>
                     <h1>CONTATO</h1>
@@ -31,6 +31,6 @@ export default function ContactsSection() {
                     </Buttons>
                 </ButtonsConteiner>
             </div>
-        </section>
+        </ConteinerSection>
     )
 }
