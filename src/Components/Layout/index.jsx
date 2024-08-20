@@ -1,21 +1,17 @@
 import { Outlet } from "react-router";
 import Footer from "../Footer";
 import Header from "../Head";
-import { BodyHome } from "./styles";
+import { ConteinerBody, ConteinerInBody } from "./styles";
 
 export default function Layout({ children }) {
 
     return (
-        <BodyHome>
-            <div>
+        <ConteinerBody>
+            <ConteinerInBody>
                 <Header />
-            </div>
-            <div >
                 <Outlet />
-            </div>
-            <div>
                 <Footer />
-            </div>
-        </BodyHome>
+            </ConteinerInBody>
+        </ConteinerBody>
     )
 } 

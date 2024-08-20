@@ -1,12 +1,22 @@
+import { useEffect } from "react";
 import ContactsSection from "../../Components/ContactsSection";
 import DescriptionStem from "../../Components/DescriptionStem";
 import ObrasHome from "../../Components/ObrasHome";
-import { ConteinerInsideTitle, ConteinerOutTitle, MainTitle } from "./styles";
+import { BackgroundHome, ConteinerInsideTitle, ConteinerOutTitle, MainTitle } from "./styles";
+import { useObrasContext } from "../../Common/Context/Obras";
 
 export default function Home() {
+    const {
+        filterObras
+    } = useObrasContext()
+
+    useEffect(() => {
+        filterObras()
+    }, [])
 
     return (
-        <div>
+        <section>
+            <BackgroundHome />
             <ConteinerOutTitle>
                 <ConteinerInsideTitle>
                     <MainTitle>
@@ -20,6 +30,6 @@ export default function Home() {
             <ObrasHome />
             <DescriptionStem />
             <ContactsSection />
-        </div>
+        </section>
     )
 }

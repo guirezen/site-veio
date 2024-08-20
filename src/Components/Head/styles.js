@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
     width: 100%;
+    background-color: transparent;
     background: ${({ pathname }) =>
       pathname !== "/home"
         ? "linear-gradient(to right, #b85151 0%, #b85151 100%)"
@@ -10,6 +11,8 @@ export const HeaderStyled = styled.header`
       pathname !== "/home" ? "100% 100%" : "0 100%"};
     background-repeat: no-repeat;
     transition: background-size 1s cubic-bezier(0.33, 1, 0.68, 1) 0s;
+    position: relative;
+    z-index: 3;
 `
 
 export const Navbar = styled.nav`
@@ -52,34 +55,39 @@ export const ListConteiner = styled.div`
     justify-content: end;
     display: flex;
     width: 100%;
-    max-width: 670px;
-    margin-right: 50px;
+    max-width: 850px;
+    margin-right: 100px;
 `
 
 export const List = styled.ul`
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 5px;
     padding: 0;
     display: inherit;
     width: 100%;
-    justify-content: ${({pathname}) => (pathname == '/home' ? 'space-between' : 'center')};
+    justify-content: right;
 
     div {
         display: inherit;
+
+        &:nth-of-type(1) {
+            margin-right: ${({pathname}) => (pathname == '/home' ? '283px' : 'none')};
+        }
     }
 `
 
 export const ItensList = styled.li`
     font-size: 10px;
-    padding: 10px 17px;
-    margin-left: 42px;
-    margin-bottom: 18px;
     letter-spacing: 2px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
     border: 1px solid transparent;
     cursor: pointer;
     color: #fff;
 
     &:hover {
-        border: 1px solid ${({pathname}) => (pathname == '/home' ? '#B85151' : '#4d4d4d')};
+        border: 1px solid ${({pathname}) => (pathname == '/home' & '#b85151')};
     }
 `

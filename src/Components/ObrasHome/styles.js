@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
+export const ConteinerSection = styled.section`
+    background-color: #b85151;
+    padding-top: 125px;
+    position: relative;
+    z-index: 1;
+`
+
 export const GridConteiner = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 104px;
 `
 
 export const TitleConteiner = styled.div`

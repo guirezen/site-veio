@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ConteinerSection = styled.div`
     background-color: #b85151;
-    padding: 30px 0;
+    padding-top: 81px;
+    padding-bottom: 107px;
 `
 
 export const TitleConteiner = styled.div`

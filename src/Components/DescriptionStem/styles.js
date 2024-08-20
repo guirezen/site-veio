@@ -2,18 +2,37 @@ import { makeStyles } from "@mui/material";
 import styled from "styled-components";
 
 export const Section = styled.section`
-    display: flex;
-    justify-content: center;
     width: 100%;
+    height: 465px;
     background-color: #303030;
-    padding-bottom: 131px;
+    position: relative;
+
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+`
+
+export const BackgroundTop = styled.div`
+    width: 100%;
+    height: 83px;
+    position: absolute;
+    z-index: 2;
+    top: -40px;
+    background-image: url('src/Assets/background/recorte-madeira-top.png');
+    background-repeat: no-repeat;
+
+    &:nth-of-type(3) {
+        top: 450px;
+        background-image: url('src/Assets/background/recorte-madeira-down.png');
+    }
 `
 
 export const ConteinerCarousel = styled.div`
     display: flex;
     width: 100%;
     max-width: 1500px;
-    margin-top: 131px;
 `
 
 export const ConteinerConteudo = styled.div`
@@ -38,8 +57,8 @@ export const ConteinerSeta = styled.div`
 `
 
 export const ImgObra = styled.img`
-    width: 266px;
-    height: 398px;
+    width: 288px;
+    height: 371px;
     margin-right: 97px;
 `
 

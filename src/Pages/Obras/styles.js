@@ -4,7 +4,7 @@ export const ConteinerMain = styled.main`
     display: flex;
     justify-content: center;
     background-color: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 119px;
     padding-top: 145px;
 `
 

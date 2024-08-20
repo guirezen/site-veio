@@ -1,4 +1,4 @@
-import { ConteinerCarousel, ConteinerConteudo, ConteinerDescricao, ConteinerIndicadores, ConteinerSeta, ConteinerTitulo, ImgObra, OutDescribeConteiner, Section } from "./styles";
+import { BackgroundTop, ConteinerCarousel, ConteinerConteudo, ConteinerDescricao, ConteinerIndicadores, ConteinerSeta, ConteinerTitulo, ImgObra, OutDescribeConteiner, Section } from "./styles";
 import obra from "../../Assets/Iranian_handicraft.jpg"
 import { IconButton, MobileStepper, styled } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos, Height } from "@mui/icons-material";
@@ -33,48 +33,52 @@ export default function DescriptionStem() {
 
     return (
         <Section>
-            <ConteinerCarousel>
-                <ConteinerSeta>
-                    <IconButton
-                        aria-label="previous"
-                        onClick={() => setActivateStep(0)}
-                        disabled={activateStep === 0}
-                    >
-                        <ArrowBackIos className="botao-seta" fontSize="large" />
-                    </IconButton>
-                </ConteinerSeta>
-                <ConteinerConteudo>
-                    <div>
-                        <ImgObra src={stemType[activateStep]?.imagem} />
-                    </div>
-                    <OutDescribeConteiner>
-                        <ConteinerTitulo>
-                            <h1>{formatTittle(stemType[activateStep]?.tipoTronco)}</h1>
-                        </ConteinerTitulo>
-                        <ConteinerDescricao>
-                            <p>{stemType[activateStep]?.descricao}</p>
-                        </ConteinerDescricao>
-                        <ConteinerIndicadores>
-                            <CustomMobileStepper
-                                className="indicadores"
-                                variant="dots"
-                                steps={2}
-                                position="static"
-                                activeStep={activateStep}
-                            />
-                        </ConteinerIndicadores>
-                    </OutDescribeConteiner>
-                </ConteinerConteudo>
-                <ConteinerSeta>
-                    <IconButton
-                        aria-label="forward"
-                        onClick={() => setActivateStep(1)}
-                        disabled={activateStep === 1}
-                    >
-                        <ArrowForwardIos className="botao-seta" fontSize="large" />
-                    </IconButton>
-                </ConteinerSeta>
-            </ConteinerCarousel>
+            <BackgroundTop />
+            <div className="flex-center">
+                <ConteinerCarousel>
+                    <ConteinerSeta>
+                        <IconButton
+                            aria-label="previous"
+                            onClick={() => setActivateStep(0)}
+                            disabled={activateStep === 0}
+                        >
+                            <ArrowBackIos className="botao-seta" fontSize="large" />
+                        </IconButton>
+                    </ConteinerSeta>
+                    <ConteinerConteudo>
+                        <div>
+                            <ImgObra src={stemType[activateStep]?.imagem} />
+                        </div>
+                        <OutDescribeConteiner>
+                            <ConteinerTitulo>
+                                <h1>{formatTittle(stemType[activateStep]?.tipoTronco)}</h1>
+                            </ConteinerTitulo>
+                            <ConteinerDescricao>
+                                <p>{stemType[activateStep]?.descricao}</p>
+                            </ConteinerDescricao>
+                            <ConteinerIndicadores>
+                                <CustomMobileStepper
+                                    className="indicadores"
+                                    variant="dots"
+                                    steps={2}
+                                    position="static"
+                                    activeStep={activateStep}
+                                />
+                            </ConteinerIndicadores>
+                        </OutDescribeConteiner>
+                    </ConteinerConteudo>
+                    <ConteinerSeta>
+                        <IconButton
+                            aria-label="forward"
+                            onClick={() => setActivateStep(1)}
+                            disabled={activateStep === 1}
+                        >
+                            <ArrowForwardIos className="botao-seta" fontSize="large" />
+                        </IconButton>
+                    </ConteinerSeta>
+                </ConteinerCarousel>
+            </div>
+            <BackgroundTop />
         </Section>
     )
 }

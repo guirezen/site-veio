@@ -4,6 +4,7 @@ export const ConteinerPopupObra = styled.div`
     height: 647px;
     display: flex;
     align-items: center;
+    position: relative;
 `
 
 export const ConteinerImage = styled.div`
@@ -26,8 +27,11 @@ export const ConteinerImage = styled.div`
 export const ConteinerDetalhesObra = styled.div`
     width: 70%;
     height: 527px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    h6 {
+    .background-red {
         font-size: 10px;
         font-family: 'Montserrat';
         font-weight: lighter;
@@ -59,8 +63,6 @@ export const ConteinerDetalhesObra = styled.div`
 `
 
 export const ConteinerCaracteristicasObra = styled.dl`
-    /* display: flex;
-    flex-direction: column; */
 
     div {
         display: flex;

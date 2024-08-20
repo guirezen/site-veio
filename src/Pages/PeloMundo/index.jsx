@@ -1,10 +1,11 @@
-import { ConteinerInConteudo, ConteudoConteiner, Image, Main, TitleConteiner } from "./styles";
+import { BannerConteiner, ConteinerInConteudo, ConteudoConteiner, Image, Main, TitleConteiner } from "./styles";
 
 export default function PeloMundo() {
 
     return (
         <div>
             <Main>
+                <BannerConteiner />
                 <TitleConteiner>
                     <div>
                         <h1>A obra de Véio em cartaz no<br /> brasil e no mundo</h1>

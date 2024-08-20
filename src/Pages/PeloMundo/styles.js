@@ -3,13 +3,26 @@ import styled from "styled-components";
 export const Main = styled.main`
     background-color: #e8e8e8;
     padding-bottom: 170px;
+    position: relative;
+`
+
+export const BannerConteiner = styled.div`
+    height: 874px;
+    width: 100%;
+    position: absolute;
+    background-image: url('src/Assets/background/mundo.png');
+    background-repeat: no-repeat;
+    top: -100px;
+    z-index: 2;
 `
 
 export const TitleConteiner = styled.div`
-    margin-top: 591px;
+    padding-top: 591px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
 
     div {
         text-align: left;

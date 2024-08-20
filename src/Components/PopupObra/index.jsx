@@ -4,6 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import { useObrasContext } from '../../Common/Context/Obras';
 import { ConteinerCaracteristicasObra, ConteinerDetalhesObra, ConteinerImage, ConteinerPopupObra } from './styles';
+import CarouselObras from '../CarouselObras';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -21,6 +22,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 const StyledCloseIcon = styled(IconButton)(() => ({
     right: '37px!important',
     top: '34px!important',
+    zIndex: 3,
 
     'svg': {
         fontSize: '30px'
@@ -30,7 +32,8 @@ const StyledCloseIcon = styled(IconButton)(() => ({
 export default function PopupObra() {
     const {
         openPopUp,
-        handleClosePopUp
+        handleClosePopUp,
+        obraSelected
     } = useObrasContext();
 
     return (
@@ -42,7 +45,7 @@ export default function PopupObra() {
         >
             <StyledCloseIcon
                 aria-label="close"
-                onClick={handleClosePopUp}
+                onClick={() => handleClosePopUp()}
                 sx={{
                     position: 'absolute',
                     right: 8,
@@ -54,35 +57,38 @@ export default function PopupObra() {
             </StyledCloseIcon>
             <ConteinerPopupObra>
                 <ConteinerImage>
-                    <img src='src/Assets/Iranian_handicraft.jpg' />
+                    <img src={obraSelected.url} />
                 </ConteinerImage>
                 <ConteinerDetalhesObra>
-                    <h6>OBRA</h6>
-                    <h1>{'nome da obra'}</h1>
                     <section>
-                        <h5>DETALHES DA OBRA</h5>
-                        <ConteinerCaracteristicasObra>
-                            <div>    
-                                <dt>Material</dt>
-                                <dd>{' materialObra'}</dd>
-                            </div>
+                        <h6 className='background-red'>OBRA</h6>
+                        <h1>{'nome da obra'}</h1>
+                        <section>
+                            <h5>DETALHES DA OBRA</h5>
+                            <ConteinerCaracteristicasObra>
+                                <div>
+                                    <dt>Material</dt>
+                                    <dd>{' materialObra'}</dd>
+                                </div>
 
-                            <div>
-                                <dt>Medidas</dt>
-                                <dd>{' medidasObra'}</dd>
-                            </div>
+                                <div>
+                                    <dt>Medidas</dt>
+                                    <dd>{' medidasObra'}</dd>
+                                </div>
 
-                            <div>
-                                <dt>Ano</dt>
-                                <dd>{' anoObra'}</dd>
-                            </div>
+                                <div>
+                                    <dt>Ano</dt>
+                                    <dd>{' anoObra'}</dd>
+                                </div>
 
-                            <div>
-                                <dt>Disponibilidade</dt>
-                                <dd>{' disponibilidadeObra'}</dd>
-                            </div>
-                        </ConteinerCaracteristicasObra>
+                                <div>
+                                    <dt>Disponibilidade</dt>
+                                    <dd>{' disponibilidadeObra'}</dd>
+                                </div>
+                            </ConteinerCaracteristicasObra>
+                        </section>
                     </section>
+                    <CarouselObras />
                 </ConteinerDetalhesObra>
             </ConteinerPopupObra>
         </BootstrapDialog>

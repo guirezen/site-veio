@@ -1,10 +1,11 @@
-import { ConteinerInConteudo, ConteudoConteiner, Image, Main, TitleConteiner } from "./styles";
+import { BannerConteiner, ConteinerInConteudo, ConteudoConteiner, Image, Main, TitleConteiner } from "./styles";
 
 export default function PageSobre() {
 
     return (
         <div>
             <Main>
+                <BannerConteiner />
                 <TitleConteiner>
                     <div>
                         <h1>A história do artista Cícero<br />Alves dos Santos, Véio!</h1>

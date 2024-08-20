@@ -11,6 +11,9 @@ export const ObrasProvider = ({ children }) => {
     const [currentPage, setCurrentPage] = useState(1)
     const [filteredObras, setFilteredObras] = useState([])
     const [openPopUp, setOpenPopUp] = useState(false);
+    const [obraSelected, setObrasSelected] = useState({});
+    const [obrasCarousel, setObrasCarousel] = useState([])
+    const [contador, setContador] = useState(1)
 
     return (
         <ObrasContext.Provider
@@ -26,7 +29,13 @@ export const ObrasProvider = ({ children }) => {
                 filteredObras,
                 setFilteredObras,
                 openPopUp,
-                setOpenPopUp
+                setOpenPopUp,
+                obraSelected,
+                setObrasSelected,
+                obrasCarousel,
+                setObrasCarousel,
+                contador,
+                setContador
             }}
         >
             {children}
@@ -47,7 +56,13 @@ export const useObrasContext = () => {
         filteredObras,
         setFilteredObras,
         openPopUp,
-        setOpenPopUp
+        setOpenPopUp,
+        obraSelected,
+        setObrasSelected,
+        obrasCarousel,
+        setObrasCarousel,
+        contador,
+        setContador
     } = useContext(ObrasContext)
 
     const setStemTypes = () => {
@@ -78,17 +93,31 @@ export const useObrasContext = () => {
             }
             return obra.type === selectedFilter
         })
-        setFilteredObras(obrasFiltradas)
-        console.log(filteredObras)
+        const randomObras = shuffleArray(obrasFiltradas)
+
+        setFilteredObras(randomObras)
+    }
+
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+
+        return array
+    }
+
+    const checkerRandomListRepeat = () => {
+        const randomCheckedList = filteredObras.filter(obra => obra.id !== obraSelected.id)
+
+        setObrasCarousel([obraSelected, ...randomCheckedList])
     }
 
     const handleOpenPopUp = () => {
         setOpenPopUp(true);
-        console.log(openPopUp)
     };
     const handleClosePopUp = () => {
         setOpenPopUp(false);
-        console.log(openPopUp)
     };
 
     const allPages = Math.ceil(filteredObras.length / 20)
@@ -116,6 +145,12 @@ export const useObrasContext = () => {
         openPopUp,
         setOpenPopUp,
         handleOpenPopUp,
-        handleClosePopUp
+        handleClosePopUp,
+        obraSelected,
+        setObrasSelected,
+        checkerRandomListRepeat,
+        obrasCarousel,
+        contador,
+        setContador
     }
 }
