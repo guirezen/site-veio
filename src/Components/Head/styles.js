@@ -4,11 +4,11 @@ export const HeaderStyled = styled.header`
     width: 100%;
     background-color: transparent;
     background: ${({ pathname }) =>
-      pathname !== "/home"
+      pathname !== "/"
         ? "linear-gradient(to right, #b85151 0%, #b85151 100%)"
         : "linear-gradient(to left, #b85151 100%, #b85151 0%)"};
     background-size: ${({ pathname }) =>
-      pathname !== "/home" ? "100% 100%" : "0 100%"};
+      pathname !== "/" ? "100% 100%" : "0 100%"};
     background-repeat: no-repeat;
     transition: background-size 1s cubic-bezier(0.33, 1, 0.68, 1) 0s;
     position: relative;
@@ -55,13 +55,13 @@ export const ListConteiner = styled.div`
     justify-content: end;
     display: flex;
     width: 100%;
-    max-width: 850px;
+    max-width: 880px;
     margin-right: 100px;
 `
 
 export const List = styled.ul`
     list-style-type: none;
-    margin-bottom: 5px;
+    margin-bottom: 11px;
     padding: 0;
     display: inherit;
     width: 100%;
@@ -71,7 +71,7 @@ export const List = styled.ul`
         display: inherit;
 
         &:nth-of-type(1) {
-            margin-right: ${({pathname}) => (pathname == '/home' ? '283px' : 'none')};
+            margin-right: ${({pathname}) => (pathname == '/' && '283px')};
         }
     }
 `
@@ -85,9 +85,13 @@ export const ItensList = styled.li`
     line-height: 35px;
     border: 1px solid transparent;
     cursor: pointer;
-    color: #fff;
+    color: #FFFFFF;
+
+    &:has(+ li) {
+        margin-right: 13px;
+    }
 
     &:hover {
-        border: 1px solid ${({pathname}) => (pathname == '/home' & '#b85151')};
+        border: 1px solid ${({pathname}) => (pathname == '/' & '#b85151')};
     }
 `

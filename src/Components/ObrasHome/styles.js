@@ -20,9 +20,10 @@ export const TitleConteiner = styled.div`
     margin-bottom: 26px;
 
     h1 {
-        font-weight: lighter;
+        font-weight: 300;
         font-size: 29px;
-        letter-spacing: 4px;
+        letter-spacing: 3px;
+        color: #303030;
     }
 `
 
@@ -60,6 +61,7 @@ export const ButtonAllWorks = styled.button`
     width: 212px;
     height: 43px;
     font-size: 13px;
+    color: #303030;
     letter-spacing: 3px;
     margin-top: 36px;
     cursor: pointer;

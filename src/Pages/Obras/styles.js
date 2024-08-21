@@ -25,6 +25,8 @@ export const ConteinerTitle = styled.div`
 
     h1 {
         font-size: 29px;
+        font-weight: 950;
+        color: #bc5e5e;
         letter-spacing: 4px;
     }
 `

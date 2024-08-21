@@ -33,6 +33,6 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: 'Neoris';
+        font-family: 'Nunito Sans';
     }
 `

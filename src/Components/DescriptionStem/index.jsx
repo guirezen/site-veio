@@ -1,7 +1,7 @@
 import { BackgroundTop, ConteinerCarousel, ConteinerConteudo, ConteinerDescricao, ConteinerIndicadores, ConteinerSeta, ConteinerTitulo, ImgObra, OutDescribeConteiner, Section } from "./styles";
 import obra from "../../Assets/Iranian_handicraft.jpg"
 import { IconButton, MobileStepper, styled } from "@mui/material";
-import { ArrowBackIos, ArrowForwardIos, Height } from "@mui/icons-material";
+import { ArrowBackIos, ArrowBackIosNew, ArrowForwardIos, Height } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { useObrasContext } from "../../Common/Context/Obras";
 
@@ -42,7 +42,7 @@ export default function DescriptionStem() {
                             onClick={() => setActivateStep(0)}
                             disabled={activateStep === 0}
                         >
-                            <ArrowBackIos className="botao-seta" fontSize="large" />
+                            <ArrowBackIosNew className="botao-seta" fontSize="large" />
                         </IconButton>
                     </ConteinerSeta>
                     <ConteinerConteudo>

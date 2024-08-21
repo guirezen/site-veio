@@ -33,6 +33,7 @@ export const ConteinerCarousel = styled.div`
     display: flex;
     width: 100%;
     max-width: 1500px;
+    z-index: 3;
 `
 
 export const ConteinerConteudo = styled.div`
@@ -87,7 +88,7 @@ export const ConteinerTitulo = styled.div`
 export const ConteinerDescricao = styled.div`
     max-width: 417px;
     font-size: 18px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: #7b7b7b;
 `
 

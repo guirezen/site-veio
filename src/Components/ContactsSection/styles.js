@@ -64,6 +64,7 @@ export const ContactConteiner = styled.div`
     justify-content: space-between;
     margin-left: 30px;
     text-align: left;
+    font-family: 'Montserrat';
 
     .label-contact {
         font-size: 15px;

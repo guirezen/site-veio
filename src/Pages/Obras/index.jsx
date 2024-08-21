@@ -1,8 +1,21 @@
-import { Pagination } from "@mui/material";
+import { Pagination, styled } from "@mui/material";
 import { ConteinerGrid, ConteinerInMain, ConteinerMain, ConteinerPagination, ConteinerTitle, ConteinerTitleFilter } from "./styles";
 import FilterList from "../../Components/FilterList";
 import { useEffect } from "react";
 import { useObrasContext } from "../../Common/Context/Obras";
+
+const CustomPagination = styled(Pagination)(() => ({
+    '.MuiButtonBase-root': {
+        color: '#7a7a7a',
+        fontSize: '19px',
+        fontWeight: 'bold',
+    },
+    '.Mui-selected': {
+        backgroundColor: '#b85151',
+        color: '#fff',
+    },
+}))
+
 export default function ObrasPage() {
     const {
         displayedObras,
@@ -39,13 +52,13 @@ export default function ObrasPage() {
                     <ConteinerGrid>
                         {
                             displayedObras.map(obra => (
-                                <img src={obra.url} alt="Imagem de uma obra"/>
+                                <img src={obra.url} alt="Imagem de uma obra" />
                             ))
                         }
                     </ConteinerGrid>
                 </div>
                 <ConteinerPagination>
-                    <Pagination
+                    <CustomPagination
                         count={allPages}
                         shape="rounded"
                         page={currentPage}

@@ -15,8 +15,8 @@ export default function RoutesApp() {
 
             <ContextComponent>
                 <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route path="/home" element={<Home />} />
+                    <Route element={<Layout />}>
+                        <Route path="/" element={<Home />} />
                         <Route path="/sobre" element={<PageSobre />} />
                         <Route path="/pelomundo" element={<PeloMundo />} />
                         <Route path="/obras" element={<ObrasPage />} />

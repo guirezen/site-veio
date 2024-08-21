@@ -16,17 +16,20 @@ export const ConteinerOutTitle = styled.div`
     height: 580px;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 3;
 `
 
 export const ConteinerInsideTitle = styled.div`
     width: 40%;
 `
 export const MainTitle = styled.h1`
-    letter-spacing: 3px;
+    letter-spacing: 8px;
     color: #D2D2D2;
     text-align: right;
     font-size: 39px;
     font-weight: lighter;
+    line-height: 1.1;
 
     span {
         color: #B85151;

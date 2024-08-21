@@ -11,7 +11,7 @@ export default function Header() {
                     <RedSquary>
                         <Link
                             className="botoes-menu-superior"
-                            to={'/home'}>
+                            to={'/'}>
                             <h4>
                                 VÉI<b>O</b>
                             </h4>

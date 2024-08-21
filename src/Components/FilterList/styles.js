@@ -15,6 +15,7 @@ export const ConteinerFilterList = styled.div`
         align-items: center;
         justify-content: center;
         font-size: 13px;
+        font-family: 'Montserrat';
         letter-spacing: 2px;
         color: #7b7b7b;
         opacity: 1;
