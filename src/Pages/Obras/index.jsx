@@ -3,6 +3,7 @@ import { ConteinerGrid, ConteinerInMain, ConteinerMain, ConteinerPagination, Con
 import FilterList from "../../Components/FilterList";
 import { useEffect } from "react";
 import { useObrasContext } from "../../Common/Context/Obras";
+import PopupObra from "../../Components/PopupObra";
 
 const CustomPagination = styled(Pagination)(() => ({
     '.MuiButtonBase-root': {
@@ -23,7 +24,9 @@ export default function ObrasPage() {
         setCurrentPage,
         filterObras,
         allPages,
-        selectedFilter
+        selectedFilter,
+        handleOpenPopUp,
+        setObrasSelected
     } = useObrasContext()
 
     useEffect(() => {
@@ -50,9 +53,17 @@ export default function ObrasPage() {
                 </ConteinerTitleFilter>
                 <div>
                     <ConteinerGrid>
-                        {
+                    {
                             displayedObras.map(obra => (
-                                <img src={obra.url} alt="Imagem de uma obra" />
+                                <img
+                                    key={obra.id}
+                                    src={obra.url}
+                                    alt="Imagem de uma obra"
+                                    onClick={() => {
+                                        handleOpenPopUp()
+                                        setObrasSelected(obra)
+                                    }}
+                                />
                             ))
                         }
                     </ConteinerGrid>
@@ -66,6 +77,7 @@ export default function ObrasPage() {
                     />
                 </ConteinerPagination>
             </ConteinerInMain>
+            <PopupObra />
         </ConteinerMain>
     )
 }
