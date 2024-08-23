@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Main = styled.main`
     background-color: #e8e8e8;
+    padding: 0 30px;
     padding-bottom: 170px;
     position: relative;
 `
@@ -12,8 +13,12 @@ export const BannerConteiner = styled.div`
     position: absolute;
     background-image: url('src/Assets/background/mundo.png');
     background-repeat: no-repeat;
-    top: -100px;
+    top: 0px;
     z-index: 2;
+
+    @media (max-width: 900px) {
+        background-position: 10% 50%;   
+    }
 `
 
 export const TitleConteiner = styled.div`
@@ -26,7 +31,10 @@ export const TitleConteiner = styled.div`
 
     div {
         text-align: left;
-        width: 710px;
+
+        @media (min-width: 900px) {
+            width: 710px; 
+        }
     }
 
     h1 {
@@ -34,6 +42,10 @@ export const TitleConteiner = styled.div`
         color: #b85151;
         margin-bottom: 11px;
         font-family: 'Montserrat';
+
+        @media (max-width: 900px) {
+            font-size: 30px;
+        }
     }
 
     span {
@@ -43,6 +55,10 @@ export const TitleConteiner = styled.div`
         letter-spacing: 0px;
         color: #3D3D3D;
         opacity: 1;
+    }
+
+    @media (max-width: 900px) {
+        align-items: start;
     }
 `
 
@@ -64,7 +80,14 @@ export const ConteudoConteiner = styled.div`
 `
 
 export const ConteinerInConteudo = styled.div`
-    width: 710px;
+    @media (min-width: 900px) {
+        width: 710px; 
+    }
+
+    .center-image {
+        text-align: center;
+        margin: 0;
+    }
 
     div {
         width: 100%;
@@ -87,4 +110,8 @@ export const ConteinerInConteudo = styled.div`
 
 export const Image = styled.img`
     width: 710px;
+
+    @media (max-width: 900px) {
+        width: 360px; 
+    }
 `

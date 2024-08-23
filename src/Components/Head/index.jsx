@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { HeaderStyled, ItensList, List, ListConteiner, LogoConteiner, Navbar, RedSquary } from "./styles";
+import NavbarMenu from "../Navbar";
 
 export default function Header() {
     const param = useLocation().pathname
@@ -41,9 +42,15 @@ export default function Header() {
                             >
                                 <ItensList>PELO MUNDO</ItensList>
                             </Link>
-                            <ItensList>CONTATO</ItensList>
+                            <Link
+                                className="botoes-menu-superior"
+                                to={'/#ancoraContatos'}
+                            >
+                                <ItensList>CONTATO</ItensList>
+                            </Link>
                         </div>
                     </List>
+                    <NavbarMenu />
                 </ListConteiner>
             </Navbar>
         </HeaderStyled>

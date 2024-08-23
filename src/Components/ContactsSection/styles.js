@@ -21,6 +21,11 @@ export const ButtonsConteiner = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 30px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 export const Buttons = styled.button`
@@ -54,6 +59,13 @@ export const Buttons = styled.button`
     &:active {
         width: 340px;
         height: 141px;
+    }
+
+    @media (max-width: 1024px) {
+        &:nth-of-type(1) {
+            margin-right: 0px;
+            margin-bottom: 37px;
+        }
     }
 `
 

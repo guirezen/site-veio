@@ -57,6 +57,10 @@ export const ListConteiner = styled.div`
     width: 100%;
     max-width: 880px;
     margin-right: 100px;
+
+    @media (max-width: 900px) {
+        margin-right: 0px;
+    }
 `
 
 export const List = styled.ul`
@@ -73,6 +77,10 @@ export const List = styled.ul`
         &:nth-of-type(1) {
             margin-right: ${({pathname}) => (pathname == '/' && '283px')};
         }
+    }
+
+    @media (max-width: 900px) {
+        display: none;
     }
 `
 

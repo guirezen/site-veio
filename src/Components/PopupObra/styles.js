@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const ConteinerPopupObra = styled.div`
-    height: 647px;
     display: flex;
     align-items: center;
     position: relative;
+    height: 647px;
+
+    @media (max-width: 900px) {
+        height: auto;
+        flex-direction: column;
+        padding: 40px 0
+    }
 `
 
 export const ConteinerImage = styled.div`
@@ -21,6 +27,13 @@ export const ConteinerImage = styled.div`
         -webkit-box-shadow: 10px 10px 23px -17px rgba(0,0,0,0.75);
         -moz-box-shadow: 10px 10px 23px -17px rgba(0,0,0,0.75);
         box-shadow: 10px 10px 23px -17px rgba(0,0,0,0.75);
+    }
+
+    @media (max-width: 900px) {
+        width: 100%;
+        right: 0;
+        text-align: center;
+        margin-bottom: 20px;
     }
 `
 

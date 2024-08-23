@@ -11,7 +11,7 @@ export const GridConteiner = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 104px;
+    padding: 0 30px 104px 30px;
 `
 
 export const TitleConteiner = styled.div`

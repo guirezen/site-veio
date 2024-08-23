@@ -37,4 +37,8 @@ export const ConteinerFilterList = styled.div`
     label:nth-of-type(2) {
         margin: 0 9px;
     }
+
+    @media(max-width: 900px) {
+        display: none;
+    }
 `

@@ -4,8 +4,8 @@ export default function PageSobre() {
 
     return (
         <div>
+            <BannerConteiner />
             <Main>
-                <BannerConteiner />
                 <TitleConteiner>
                     <div>
                         <h1>A história do artista Cícero<br />Alves dos Santos, Véio!</h1>
@@ -17,10 +17,12 @@ export default function PageSobre() {
                         <p className="p-margin-bt">
                             O apelido Véio, nasceu quando Cícero Alves dos Santos tinha apenas cinco anos de idade, devido a um interesse constante em estar entre os mais velhos e absorver todo o saber popular que o Sertão Sergipano tinha enraizado.
                         </p>
-                        <Image
-                            src="src/Assets/image.png"
-                            alt="Imagem do véio em sua oficina"
-                        />
+                        <div className="center-image">
+                            <Image
+                                src="src/Assets/image.png"
+                                alt="Imagem do véio em sua oficina"
+                            />
+                        </div>
                         <div>
                             <span>
                                 Véio em sua oficina na cidade de Nossa Senhora da Glória/SE

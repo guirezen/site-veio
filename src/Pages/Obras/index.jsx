@@ -12,7 +12,7 @@ const CustomPagination = styled(Pagination)(() => ({
         fontWeight: 'bold',
     },
     '.Mui-selected': {
-        backgroundColor: '#b85151',
+        backgroundColor: '#be5353!important',
         color: '#fff',
     },
 }))

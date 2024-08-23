@@ -10,15 +10,18 @@ export const ConteinerMain = styled.main`
 
 export const ConteinerInMain = styled.div`
     max-width: 1094px;
-    width: 70%;
+    width: 80%;
 `
 
 export const ConteinerTitleFilter = styled.div`
     display: flex;
     width: 100%;
-    min-width: 710px;
     margin-bottom: 64px;
     justify-content: space-between;
+
+    @media (min-width: 900px) {
+        min-width: 710px;
+    } 
 `
 
 export const ConteinerTitle = styled.div`

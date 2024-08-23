@@ -5,7 +5,7 @@ import { Buttons, ButtonsConteiner, ContactConteiner, ConteinerSection, TitleCon
 export default function ContactsSection() {
 
     return (
-        <ConteinerSection>
+        <ConteinerSection id="ancoraContatos">
             <div>
                 <TitleConteiner>
                     <h1>CONTATO</h1>

@@ -12,6 +12,10 @@ export const Section = styled.section`
         justify-content: center;
         height: 100%;
     }
+
+    @media (max-width: 1024px) {
+        height: 870px;
+    }
 `
 
 export const BackgroundTop = styled.div`
@@ -26,6 +30,10 @@ export const BackgroundTop = styled.div`
     &:nth-of-type(3) {
         top: 450px;
         background-image: url('src/Assets/background/recorte-madeira-down.png');
+
+        @media (max-width: 1024px) {
+            top: 869px;
+        }
     }
 `
 
@@ -37,13 +45,18 @@ export const ConteinerCarousel = styled.div`
 `
 
 export const ConteinerConteudo = styled.div`
-    width: 60%;
+    width: 80%;
     display: inherit;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
 `
+
 export const ConteinerSeta = styled.div`
-    width: 20%;
+    width: 10%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -60,11 +73,24 @@ export const ConteinerSeta = styled.div`
 export const ImgObra = styled.img`
     width: 288px;
     height: 371px;
-    margin-right: 97px;
+
+    @media (min-width: 1024px) {
+        margin-right: 97px;
+    }
+
+    @media (max-width: 1024px) {
+        margin-bottom: 20px;
+    }
 `
 
 export const OutDescribeConteiner = styled.div`
-    height: 250px;
+    @media (min-width: 1024px) {
+        padding: 0 15px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 0 20px;
+    }
 `
 
 export const ConteinerTitulo = styled.div`
@@ -90,11 +116,13 @@ export const ConteinerDescricao = styled.div`
     font-size: 18px;
     font-family: 'Montserrat';
     color: #7b7b7b;
+
+    @media (max-width: 1024px) {
+        max-width: 485px;
+    }
 `
 
 export const ConteinerIndicadores = styled.div`
-    margin-top: 48px;
-
     .indicadores {
         display: flex;
         justify-content: end;

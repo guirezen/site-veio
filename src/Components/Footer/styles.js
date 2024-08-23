@@ -37,4 +37,9 @@ export const ConteinerTitle = styled.div`
         color: #474747;
         letter-spacing: 0.52px;
     }
+
+    @media (max-width: 1024px) {
+        width: 65%;
+        margin-left: 30px;
+    }
 `

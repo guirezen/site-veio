@@ -4,8 +4,8 @@ export default function PeloMundo() {
 
     return (
         <div>
+            <BannerConteiner />
             <Main>
-                <BannerConteiner />
                 <TitleConteiner>
                     <div>
                         <h1>A obra de Véio em cartaz no<br /> brasil e no mundo</h1>
@@ -17,10 +17,12 @@ export default function PeloMundo() {
                         <p className="p-margin-bt">
                             O apelido Véio, nasceu quando Cícero Alves dos Santos tinha apenas cinco anos de idade, devido a um interesse constante em estar entre os mais velhos e absorver todo o saber popular que o Sertão Sergipano tinha enraizado.
                         </p>
-                        <Image
-                            src="src/Assets/image.png"
-                            alt="Imagem do véio em sua oficina"
-                        />
+                        <div className="center-image">
+                            <Image
+                                src="src/Assets/image.png"
+                                alt="Imagem do véio em sua oficina"
+                            />
+                        </div>
                         <div>
                             <span>
                                 Exposição fixa na Galeria MAM de Paris
@@ -32,10 +34,12 @@ export default function PeloMundo() {
                         <p>
                             Sem nunca ter observado o trabalho de outros artistas, num ambiente rural, em que o único contato com o mundo exterior era feito através do rádio, a missão de Véio seria introduzir este novo conceito ao seu povo ( e ao mundo), o qual chamamos de “Arte”.
                         </p>
-                        <Image
-                            src="src/Assets/image.png"
-                            alt="Imagem do véio em sua oficina"
-                        />
+                        <div className="center-image">
+                            <Image
+                                src="src/Assets/image.png"
+                                alt="Imagem do véio em sua oficina"
+                            />
+                        </div>
                         <div>
                             <span>
                                 Exposição fixa na Galeria MAM de Paris

@@ -9,6 +9,10 @@ export const BackgroundHome = styled.div`
     position: absolute;
     top: -60px;
     z-index: 2;
+
+    @media (max-width: 900px) {
+        background-position: 60% 50%;
+    }
 `
 
 export const ConteinerOutTitle = styled.div`
@@ -22,6 +26,10 @@ export const ConteinerOutTitle = styled.div`
 
 export const ConteinerInsideTitle = styled.div`
     width: 40%;
+
+    @media (max-width: 510px) {
+        width: 60%;
+    }
 `
 export const MainTitle = styled.h1`
     letter-spacing: 8px;
@@ -33,5 +41,9 @@ export const MainTitle = styled.h1`
 
     span {
         color: #B85151;
+    }
+
+    @media (max-width: 1024px) {
+        margin-left: 20px;
     }
 `
