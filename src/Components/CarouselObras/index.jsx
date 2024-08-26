@@ -32,7 +32,6 @@ export default function CarouselObras() {
             let contadorAtualizado = contador - 1
             setContador(contadorAtualizado)
             setObrasSelected(obrasCarousel[contadorAtualizado])
-            console.log(contador)
         }
     }
 
@@ -41,7 +40,6 @@ export default function CarouselObras() {
             let contadorAtualizado = contador + 1
             setContador(contadorAtualizado)
             setObrasSelected(obrasCarousel[contadorAtualizado])
-            console.log(contador)
         }
     }
 

@@ -22,10 +22,13 @@ export default function ObrasHome() {
                     </TitleConteiner>
                     <GridObras>
                         {filteredObras.slice(0, 8).map(obra => (
-                            <div onClick={() => {
-                                handleOpenPopUp()
-                                setObrasSelected(obra)
-                            }}>
+                            <div
+                                key={obra.id}
+                                onClick={() => {
+                                    handleOpenPopUp()
+                                    setObrasSelected(obra)
+                                }}
+                            >
                                 <ImgObra src={obra.url} />
                             </div>
                         ))}

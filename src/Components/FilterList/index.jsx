@@ -19,10 +19,6 @@ export default function FilterList() {
         setSelectedFilter(event.target.value);
     };
 
-    useEffect(() => {
-        console.log(selectedFilter)
-    }, [selectedFilter])
-
     return (
         <>
             <ConteinerFilterList>
@@ -35,7 +31,7 @@ export default function FilterList() {
                     checked={selectedFilter === 'todos'}
                     onChange={(event) => setSelectedFilter(event.target.value)}
                 />
-                <label for='todos'>
+                <label htmlFor='todos'>
                     Todos
                 </label>
                 <input
@@ -47,7 +43,7 @@ export default function FilterList() {
                     checked={selectedFilter === 'fechado'}
                     onChange={(event) => setSelectedFilter(event.target.value)}
                 />
-                <label for='troncosFechados'>
+                <label htmlFor='troncosFechados'>
                     Troncos Fechados
                 </label>
                 <input
@@ -59,7 +55,7 @@ export default function FilterList() {
                     checked={selectedFilter === 'aberto'}
                     onChange={(event) => setSelectedFilter(event.target.value)}
                 />
-                <label for='troncosAbertos'>
+                <label htmlFor='troncosAbertos'>
                     Troncos Abertos
                 </label>
             </ConteinerFilterList>

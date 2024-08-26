@@ -67,7 +67,6 @@ export const useObrasContext = () => {
 
     const setStemTypes = () => {
         setStemType(obras.stemtypes)
-        console.log(stemType)
     }
 
     const formatTittle = (tittle) => {

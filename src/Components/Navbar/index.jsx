@@ -35,7 +35,6 @@ function NavbarMenu(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const param = useLocation().pathname
-    console.log(param);
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
