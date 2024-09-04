@@ -44,9 +44,9 @@ export const Buttons = styled.button`
         margin-right: 37px;
     }
 
-    .icon-button {
+    /* .icon-button {
         transform: scaleX(-1);
-    }
+    } */
 
     &:hover {
         background-color: #303030;

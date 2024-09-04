@@ -65,6 +65,12 @@ export const ConteinerSeta = styled.div`
         justify-content: start;
     }
 
+    .botao-seta {
+        @media (max-width: 600px) {
+            width: 25px;
+        }
+    }
+
     .botao-seta:hover {
         color: #ad4e4e;
     }

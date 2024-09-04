@@ -9,7 +9,7 @@ export const ConteinerPopupObra = styled.div`
     @media (max-width: 900px) {
         height: auto;
         flex-direction: column;
-        padding: 40px 0
+        padding: 25px 0
     }
 `
 
@@ -35,7 +35,16 @@ export const ConteinerImage = styled.div`
         text-align: center;
         margin-bottom: 20px;
     }
-`
+
+    @media (max-width: 1125px) and (min-width: 900px) {
+        width: 41%;
+        right: 5%;
+        img {
+            width: 281px;
+            height: 427px;
+        }
+    }
+` 
 
 export const ConteinerDetalhesObra = styled.div`
     width: 70%;

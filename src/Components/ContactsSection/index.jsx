@@ -1,5 +1,6 @@
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Buttons, ButtonsConteiner, ContactConteiner, ConteinerSection, TitleConteiner } from "./styles";
 import WhatsappLink from '../WhatsappLink';
 
@@ -23,11 +24,11 @@ export default function ContactsSection() {
                     </Buttons>
                     <Buttons>
                         <div>
-                            <LocalPhoneIcon className='icon-button' fontSize='large' />
+                            <WhatsAppIcon className='icon-button' fontSize='large' />
                         </div>
                         <WhatsappLink>
                             <ContactConteiner>
-                                <span className='label-contact'>Ligue para a gente</span>
+                                <span className='label-contact'>Fale pelo whatsapp</span>
                                 <span className='information-contacts'>+55 79 999447319</span>
                             </ContactConteiner>
                         </WhatsappLink>

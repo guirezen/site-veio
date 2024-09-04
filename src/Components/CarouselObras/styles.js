@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const ConteinerOutCarousel = styled.div`
     display: flex;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
 `
 
 export const ConteinerArrowButton = styled.div`
@@ -21,6 +25,16 @@ export const ConteinerArrowButton = styled.div`
         background-color: transparent;
         cursor: pointer;
     }
+
+    @media (max-width: 1125px) and (min-width: 900px) {
+        &.arrow-left {
+            left: -90px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        display: none;
+    }
 `
 
 export const ConteinerSection = styled.section`
@@ -39,6 +53,10 @@ export const ConteinerSection = styled.section`
 export const ConteinerList = styled.ul`
     list-style: none;
     display: flex;
+
+    @media (max-width: 1125px ) and (min-width: 900px) {
+        justify-content: center;
+    }
 `
 
 export const ItensList = styled.li`
@@ -52,5 +70,11 @@ export const ItensList = styled.li`
     img {
         width: 100%;
         height: 100%;
+    }
+
+    &:nth-of-type(4) {
+        @media (max-width:1125px) {
+            display: none;
+        }
     }
 `

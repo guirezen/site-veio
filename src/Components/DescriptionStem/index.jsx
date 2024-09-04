@@ -10,9 +10,9 @@ const descricao = "Sua obras movimentam-se em duas direções : as obras de tron
 const CustomMobileStepper = styled(MobileStepper)(() => ({
     '& .MuiMobileStepper-dot': {
         backgroundColor: 'transparent',
-        border: '2px solid #747474',
-        width: '5px',
-        height: '5px'
+        border: '1px solid #747474',
+        width: '7px',
+        height: '7px'
     },
     '& .MuiMobileStepper-dotActive': {
         backgroundColor: '#B85151',

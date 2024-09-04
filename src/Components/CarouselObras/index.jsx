@@ -59,7 +59,7 @@ export default function CarouselObras() {
                 <h6>OUTRAS OBRAS</h6>
                 <ConteinerList>
                     {obrasCarousel.slice(contador + 1, contador + 5).map(obra => (
-                        <ItensList>
+                        <ItensList key={obra.id}>
                             <img src={obra.url} />
                         </ItensList>
                     ))}

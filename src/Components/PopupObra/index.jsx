@@ -13,10 +13,27 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogActions-root': {
         padding: theme.spacing(1),
     },
+    '.MuiDialog-container': {
+        '@media(min-width: 1125px) and (max-width: 1360px)': {
+            justifyContent: 'end',
+        }
+    },
     '.MuiPaper-root': {
         overflow: 'visible',
         width: '804px',
-    }
+
+        '@media(max-width: 900px)': {
+            width: '600px',
+            margin: '0',
+        },
+        '@media(min-width: 900px)': {
+            width: '70%',
+            minWidth: '663px',
+        },
+        '@media(min-width: 1125px) and (max-width: 1360px)': {
+            right: '35px',
+        },
+    },
 }));
 
 const StyledCloseIcon = styled(IconButton)(() => ({
@@ -26,7 +43,8 @@ const StyledCloseIcon = styled(IconButton)(() => ({
 
     'svg': {
         fontSize: '30px'
-    }
+    },
+
 }))
 
 export default function PopupObra() {
@@ -42,6 +60,7 @@ export default function PopupObra() {
             aria-labelledby="customized-dialog-title"
             maxWidth={'md'}
             open={openPopUp}
+            id='div-mais-externa'
         >
             <StyledCloseIcon
                 aria-label="close"
@@ -55,7 +74,7 @@ export default function PopupObra() {
             >
                 <CloseIcon />
             </StyledCloseIcon>
-            <ConteinerPopupObra>
+            <ConteinerPopupObra id='div-abaixo-da-externa'>
                 <ConteinerImage>
                     <img src={obraSelected.url} />
                 </ConteinerImage>
