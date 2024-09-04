@@ -9,7 +9,11 @@ export const ConteinerPopupObra = styled.div`
     @media (max-width: 900px) {
         height: auto;
         flex-direction: column;
-        padding: 25px 0
+        padding: 25px 0;
+    }
+
+    @media (max-width: 600px) {
+        margin-top: 30px;
     }
 `
 
@@ -48,7 +52,6 @@ export const ConteinerImage = styled.div`
 
 export const ConteinerDetalhesObra = styled.div`
     width: 70%;
-    height: 527px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,6 +84,10 @@ export const ConteinerDetalhesObra = styled.div`
         font-family: 'Montserrat';
         color: #B85151;
         margin-bottom: 8px;
+    }
+
+    @media (min-width: 900px) {
+        height: 527px;
     }
 `
 

@@ -44,6 +44,10 @@ const StyledCloseIcon = styled(IconButton)(() => ({
     'svg': {
         fontSize: '30px'
     },
+    '@media (max-width: 600px)' : {
+        right: '6px!important',
+        top: '7px!important',
+    }
 
 }))
 
@@ -74,7 +78,7 @@ export default function PopupObra() {
             >
                 <CloseIcon />
             </StyledCloseIcon>
-            <ConteinerPopupObra id='div-abaixo-da-externa'>
+            <ConteinerPopupObra>
                 <ConteinerImage>
                     <img src={obraSelected.url} />
                 </ConteinerImage>

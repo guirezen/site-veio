@@ -10,6 +10,6 @@ export const ConteinerBody = styled.div`
 
 export const ConteinerInBody = styled.div`
     width: 100%;
-    max-width: 1366px;
+    max-width: 2155px;
     position: relative;
 `
