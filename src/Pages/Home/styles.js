@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const BackgroundHome = styled.div`
     width: 100%;
     height: 869px;
-    background-image: url('/Assets/background/banner-image-veio_maior.png');
+    background-image: url('src/Assets/background/banner-image-veio_maior.png');
     background-repeat: no-repeat;
     background-position: right 60%;
     position: absolute;

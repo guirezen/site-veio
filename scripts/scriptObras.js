@@ -3,7 +3,7 @@ import path from 'path';
 
 // Função para gerar a galeria
 function generateGallery() {
-  const baseDir = 'D:/Users/rezen/Trampo/freelances/Site veio/site-veio//Assets/Obras';
+  const baseDir = 'D:/Users/rezen/Trampo/freelances/Site veio/site-veio/src/Assets/Obras';
   const pathWrite = 'D:/Users/rezen/Trampo/freelances/Site veio/site-veio/Utils'
 
   // Pastas específicas
@@ -23,7 +23,7 @@ function generateGallery() {
     files.forEach(file => {
       gallery.push({
         id: id++,
-        url: `/Assets/Obras/${dirPath}/${file}`,
+        url: `src/Assets/Obras/${dirPath}/${file}`,
         type: type
       });
     });

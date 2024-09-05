@@ -2,37 +2,37 @@
     "stemtypes": [
         {
             "id": 0,
-            "imagem": "/Assets/carroselHome/tronco-aberto.png",
+            "imagem": "src/Assets/carroselHome/tronco-aberto.png",
             "tipoTronco": "TRONCOS ABERTOS",
             "descricao": "As obras de Véio divide-se em duas categorias: as de ‘troncos aberto’ e as  de ‘tronco fechado’. Nas obras de ‘tronco aberto’, o artista  trabalha seu lado criativo, surgindo palhaços, penitentes, cenas cotidianas do sertão, miniaturas imperceptíveis a olho nu, entre outras. Nessa categoria as obras são criadas de forma planejada."
         },
         {
             "id": 1,
-            "imagem": "/Assets/carroselHome/obra1-fundotransparente.png",
+            "imagem": "src/Assets/carroselHome/obra1-fundotransparente.png",
             "tipoTronco": "TRONCOS FECHADOS",
             "descricao": "Nas obras de ‘tronco fechado’ o artista preserva o caráter expressivo que a natureza lhe entrega, fazendo apenas pequenas intervenções, surgindo figuras nunca vistas. Todas as obras são provenientes de madeiras mortas, que morreram por si só ou que precisaram serem tiradas da natureza."
         },
         {
             "id": 2,
-            "imagem": "/Assets/carroselHome/palhacos.png",
+            "imagem": "src/Assets/carroselHome/palhacos.png",
             "tipoTronco": "Palhaços  meu sonho de criança",
             "descricao": "Essa série remete a infância de Véio, ele tinha um sonho de ser palhaço quando era criança, quando o circo chegava a cidade, ele ficava deslumbrado com a liberdade e a alegria que o palhaço tinha... lá na frente, a vida mostrou que o palhaço era um “fingidor”, muitas vezes fingia a alegria, para fazer o outro feliz. Todos nós fomos, somos ou seremos palhaços um dia, costuma dizer o artista."
         },
         {
             "id": 3,
-            "imagem": "/Assets/carroselHome/esquecidos.png",
+            "imagem": "src/Assets/carroselHome/esquecidos.png",
             "tipoTronco": "Os  esquecidos",
             "descricao": "Nessa nova série, o artista traz obras que ficaram esquecidas por um tempo em seu atelier, mas ele diz, que o que a série quer nos lembrar são das coisas importantes que são esquecidas dentro de nós."
         },
         {
             "id": 4,
-            "imagem": "/Assets/carroselHome/caes.png",
+            "imagem": "src/Assets/carroselHome/caes.png",
             "tipoTronco": "Os  ‘cão’ do meu inferno",
             "descricao": "Essa série retrata os dias de “cão “ que temos, onde lutamos com nossos próprios demônios . Somos nós contra nós."
         },
         {
             "id": 5,
-            "imagem": "/Assets/carroselHome/penitentes.png",
+            "imagem": "src/Assets/carroselHome/penitentes.png",
             "tipoTronco": "Penitentes",
             "descricao": "A série penitente traz a simbologia das pessoas que se vestiam de branco, na quinta-feira maior da semana santa e saíam se auto-flagelando para se redimirem dos seus pecados."
         }
