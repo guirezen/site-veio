@@ -10,7 +10,7 @@ import ObrasPage from "../Pages/Obras";
 export default function RoutesApp() {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/site-veio/">
             <GlobalStyles />
 
             <ContextComponent>
