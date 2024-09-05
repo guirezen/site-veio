@@ -1,12 +1,13 @@
 import { createContext, useContext, useState } from "react";
 import obras from "../../Utils/obras.json"
+import tiposTroncos from "../../Utils/tiposTroncos.json"
 
 export const ObrasContext = createContext();
 ObrasContext.displayName = "Obras";
 
 export const ObrasProvider = ({ children }) => {
     const [obrasList, setObrasList] = useState(obras.gallery)
-    const [stemType, setStemType] = useState(obras.stemtypes)
+    const [stemType, setStemType] = useState(tiposTroncos.stemtypes)
     const [selectedFilter, setSelectedFilter] = useState('todos')
     const [currentPage, setCurrentPage] = useState(1)
     const [filteredObras, setFilteredObras] = useState([])
@@ -66,23 +67,39 @@ export const useObrasContext = () => {
     } = useContext(ObrasContext)
 
     const setStemTypes = () => {
-        setStemType(obras.stemtypes)
+        setStemType(tiposTroncos.stemtypes)
     }
 
-    const formatTittle = (tittle) => {
-        const [firstPart, secondPart] = tittle.split(' ')
+    const formatTittle = (tittle, id) => {
+        if (id == 0 || id == 1) {
+            const [firstPart, secondPart] = tittle.split(' ')
 
-        return (
-            <>
-                <span className="titulo-part-1">
-                    <strong>{firstPart.slice(0, 3)}</strong>{firstPart.slice(3)}
-                </span>
-                <br />
-                <span className="titulo-part-2">
-                    {secondPart.slice(0, secondPart.length - 2)}<strong>{secondPart.slice(-4, -2)}</strong>{secondPart.slice(-2)}
-                </span>
-            </>
-        )
+            return (
+                <>
+                    <span className="titulo-part-1">
+                        <strong>{firstPart.slice(0, 3)}</strong>{firstPart.slice(3)}
+                    </span>
+                    <br />
+                    <span className="titulo-part-2">
+                        {secondPart.slice(0, secondPart.length - 2)}<strong>{secondPart.slice(-4, -2)}</strong>{secondPart.slice(-2)}
+                    </span>
+                </>
+            )
+        } else {
+            const [firstPart, secondPart] = tittle.split('  ')
+
+            return (
+                <>
+                    <span className="titulo-part-1">
+                        <strong>{firstPart}</strong>
+                    </span >
+                    <br />
+                    <span className="titulo-part-2">
+                        {secondPart}
+                    </span>
+                </>
+            )
+        }
     }
 
     const filterObras = () => {

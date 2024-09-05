@@ -100,6 +100,6 @@ export const ItensList = styled.li`
     }
 
     &:hover {
-        border: 1px solid ${({pathname}) => (pathname == '/' & '#b85151')};
+        border: 1px solid #b85151;
     }
 `
