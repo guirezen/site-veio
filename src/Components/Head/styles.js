@@ -56,7 +56,7 @@ export const ListConteiner = styled.div`
     display: flex;
     width: 100%;
     max-width: 880px;
-    margin-right: 480px;
+    margin-right: 108px;
 
     @media (max-width: 900px) {
         margin-right: 0px;

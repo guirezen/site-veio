@@ -15,7 +15,7 @@ export const BackgroundTop = styled.div`
     position: absolute;
     z-index: 2;
     top: -40px;
-    background-image: url('src/Assets/background/recorte-madeira-top.png');
+    background-image: url('src/Assets/background/recorte-madeira_down_maior.png');
     background-repeat: no-repeat;
 `
 

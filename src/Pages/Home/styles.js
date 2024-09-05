@@ -2,16 +2,16 @@ import styled from "styled-components"
 
 export const BackgroundHome = styled.div`
     width: 100%;
-    height: 849px;
+    height: 869px;
     background-image: url('src/Assets/background/banner-image-veio_maior.png');
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right 60%;
     position: absolute;
     top: -60px;
     z-index: 2;
 
     @media (max-width: 900px) {
-        background-position: 60% 50%;
+        background-position: 78% 50%;
     }
 `
 

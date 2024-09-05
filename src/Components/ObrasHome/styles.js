@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ConteinerSection = styled.section`
     background-color: #b85151;
-    padding-top: 125px;
+    padding-top: 145px;
     position: relative;
     z-index: 1;
 `
