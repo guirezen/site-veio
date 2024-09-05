@@ -19,7 +19,7 @@ export default function PeloMundo() {
                         </p>
                         <div className="center-image">
                             <Image
-                                src="src/Assets/image.png"
+                                src="/Assets/image.png"
                                 alt="Imagem do véio em sua oficina"
                             />
                         </div>
@@ -36,7 +36,7 @@ export default function PeloMundo() {
                         </p>
                         <div className="center-image">
                             <Image
-                                src="src/Assets/image.png"
+                                src="/Assets/image.png"
                                 alt="Imagem do véio em sua oficina"
                             />
                         </div>

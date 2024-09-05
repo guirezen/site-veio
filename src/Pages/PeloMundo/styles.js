@@ -11,7 +11,7 @@ export const BannerConteiner = styled.div`
     height: 874px;
     width: 100%;
     position: absolute;
-    background-image: url('src/Assets/background/mundo_maior.png');
+    background-image: url('/Assets/background/mundo_maior.png');
     background-repeat: no-repeat;
     top: 0px;
     z-index: 2;

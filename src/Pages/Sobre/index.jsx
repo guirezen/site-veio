@@ -21,7 +21,7 @@ export default function PageSobre() {
                         </p>
                         <div className="center-image">
                             <Image
-                                src="src/Assets/image.png"
+                                src="/Assets/image.png"
                                 alt="Imagem do véio em sua oficina"
                             />
                         </div>
