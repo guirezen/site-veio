@@ -2,7 +2,9 @@
   "name": "site-veio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://guirezen.github.io/site-veio",
   "type": "module",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
