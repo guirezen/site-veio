@@ -1,6 +1,9 @@
-import { BannerConteiner, ConteinerInConteudo, ConteudoConteiner, Image, Main, TitleConteiner } from "./styles";
+import ImageDescription from "../../Components/ImageDescription";
+import { BannerConteiner, ConteinerInConteudo, ConteudoConteiner, Main, TitleConteiner } from "./styles";
+import pelomundo from "../../Utils/pelomundo.json"
 
 export default function PeloMundo() {
+    const gallery = pelomundo.gallery;
 
     return (
         <div>
@@ -21,37 +24,14 @@ export default function PeloMundo() {
                             Muitos anos depois sua arte era admirada pelo mundo: França, Itália, Suiça,
                             Estados Unidos e Londres.
                         </p>
-                        <div className="center-image">
-                            <Image
-                                src="./Assets/image.png"
-                                alt="Imagem do véio em sua oficina"
+                        {gallery.map(viagem => (
+                            <ImageDescription 
+                                urlImage={viagem.urlImage}
+                                alt={"Foto de véio"}
+                                descricao={viagem.descricao}
+                                key={viagem.id}
                             />
-                        </div>
-                        <div>
-                            <span>
-                                Exposição fixa na Galeria MAM de Paris
-                            </span>
-                        </div>
-                        {/* <p className="p-margin-bt">
-                            Diferente de todos os homens da sua geração que estavam predestinados a trabalhar na roça , o sábio Sertão traçou planos diferentes para Cícero, seu traço fino esculpiu um futuro bem diferente e marcou com o seu canivete toda a história de Nossa Senhora da Glória.
-                        </p>
-                        <p>
-                            Sem nunca ter observado o trabalho de outros artistas, num ambiente rural, em que o único contato com o mundo exterior era feito através do rádio, a missão de Véio seria introduzir este novo conceito ao seu povo ( e ao mundo), o qual chamamos de “Arte”.
-                        </p> */}
-                        <div className="center-image">
-                            <Image
-                                src="./Assets/image.png"
-                                alt="Imagem do véio em sua oficina"
-                            />
-                        </div>
-                        <div>
-                            <span>
-                                Exposição fixa na Galeria MAM de Paris
-                            </span>
-                        </div>
-                        {/* <p>
-                            Sem nunca ter observado o trabalho de outros artistas, num ambiente rural, em que o único contato com o mundo exterior era feito através do rádio, a missão de Véio seria introduzir este novo conceito ao seu povo ( e ao mundo), o qual chamamos de “Arte”.
-                        </p> */}
+                        ))}
                     </ConteinerInConteudo>
                 </ConteudoConteiner>
             </Main>

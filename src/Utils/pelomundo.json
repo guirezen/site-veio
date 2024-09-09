@@ -1,0 +1,84 @@
+{
+    "gallery" : [
+        {
+            "id": 0,
+            "urlImage": "./Assets/pelo mundo/Luz.jpg",
+            "descricao": "Casa Estação da Luz  Olinda"
+        },
+        {
+            "id": 1,
+            "urlImage": "./Assets/pelo mundo/Etel 2.jpg",
+            "descricao": ""
+        },
+        {
+            "id": 2,
+            "urlImage": "./Assets/pelo mundo/Etel.jpg",
+            "descricao": "Etel Milão ( Foto Etel Milão)"
+        },
+        {
+            "id": 3,
+            "urlImage": "./Assets/pelo mundo/Gustavo Rebello Rio de Janeiro.jpg",
+            "descricao": "Galeria Gustavo Rebello RJ ( Foto Galeria Gustavo Rebello)"
+        },
+        {
+            "id": 4,
+            "urlImage": "./Assets/pelo mundo/Itau Cultural Sp.jpg",
+            "descricao": "Itaú Cultural SP ( Foto Itau Cultural)"
+        },
+        {
+            "id": 5,
+            "urlImage": "./Assets/pelo mundo/MAM RJ.jpg",
+            "descricao": "MAM RJ ( FOTO MAM)"
+        },
+        {
+            "id": 6,
+            "urlImage": "./Assets/pelo mundo/New York.jpg",
+            "descricao": ""
+        },
+        {
+            "id": 7,
+            "urlImage": "./Assets/pelo mundo/Ouro Preto.jpg",
+            "descricao": "Museu Casa dos Contos, Ouro Preto – Mg ( Foto Julia Katiene)"
+        },
+        {
+            "id": 8,
+            "urlImage": "./Assets/pelo mundo/Paris 2.jpg",
+            "descricao": ""
+        },
+        {
+            "id": 9,
+            "urlImage": "./Assets/pelo mundo/Paris.jpg",
+            "descricao": "Paris ( Foto Galeria Estação )"
+        },
+        {
+            "id": 10,
+            "urlImage": "./Assets/pelo mundo/Pinacoteca de Sp.jpg",
+            "descricao": "Pinacoteca Sp ( Foto Pinacoteca Sp)"
+        },
+        {
+            "id": 11,
+            "urlImage": "./Assets/pelo mundo/Sesc Aracaju.jpg",
+            "descricao": "Sesc Sergipe (foto sesc Sergipe)"
+        },
+        {
+            "id": 12,
+            "urlImage": "./Assets/pelo mundo/Sesc Santo Amaro Sp.jpg",
+            "descricao": "Sesc Santo Amaro SP ( Foto Sesc Santo Amaro)"
+        },
+        {
+            "id": 13,
+            "urlImage": "./Assets/pelo mundo/Veneza 2.jpg",
+            "descricao": ""
+        },
+        {
+            "id": 14,
+            "urlImage": "./Assets/pelo mundo/Veneza.jpg",
+            "descricao": "Veneza ( Foto Galeria Estação)"
+        },
+        {
+            "id": 15,
+            "urlImage": "./Assets/pelo mundo/CCBB RJ.jpg",
+            "descricao": "CCBB RJ ( FOTO CCBB)"
+        }
+    ]
+}

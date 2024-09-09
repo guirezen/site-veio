@@ -84,11 +84,6 @@ export const ConteinerInConteudo = styled.div`
         width: 710px; 
     }
 
-    .center-image {
-        text-align: center;
-        margin: 0;
-    }
-
     div {
         width: 100%;
         text-align: center;
@@ -105,13 +100,5 @@ export const ConteinerInConteudo = styled.div`
 
     p {
         font-family: 'Montserrat';
-    }
-`
-
-export const Image = styled.img`
-    width: 710px;
-
-    @media (max-width: 900px) {
-        width: 360px; 
     }
 `
