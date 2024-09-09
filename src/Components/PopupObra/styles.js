@@ -27,7 +27,6 @@ export const ConteinerImage = styled.div`
         width: 351px;
         height: 527px;
         background: #303030 0% 0% no-repeat padding-box;
-        border: 1px solid #707070;
         -webkit-box-shadow: 10px 10px 23px -17px rgba(0,0,0,0.75);
         -moz-box-shadow: 10px 10px 23px -17px rgba(0,0,0,0.75);
         box-shadow: 10px 10px 23px -17px rgba(0,0,0,0.75);
@@ -59,7 +58,7 @@ export const ConteinerDetalhesObra = styled.div`
     .background-red {
         font-size: 10px;
         font-family: 'Montserrat';
-        font-weight: lighter;
+        font-weight: normal;
         letter-spacing: 3.17px;
         color: #FFFFFF;
         width: 74px;
@@ -80,7 +79,7 @@ export const ConteinerDetalhesObra = styled.div`
 
     h5 {
         font-size: 14px;
-        font-weight: lighter;
+        font-weight: normal;
         font-family: 'Montserrat';
         color: #B85151;
         margin-bottom: 8px;

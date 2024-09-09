@@ -15,7 +15,11 @@ export default function PeloMundo() {
                 <ConteudoConteiner>
                     <ConteinerInConteudo>
                         <p className="p-margin-bt">
-                            O apelido Véio, nasceu quando Cícero Alves dos Santos tinha apenas cinco anos de idade, devido a um interesse constante em estar entre os mais velhos e absorver todo o saber popular que o Sertão Sergipano tinha enraizado.
+                            A primeira exposição de Véio aconteceu em 1982 em sua cidade natal Nossa
+                            Senhora da Glória/SE, depois disso começou a desbravar o Brasil: São Paulo,
+                            Minas Gerais, Bahia, Rio de Janeiro, Brasília, Recife, etc.
+                            Muitos anos depois sua arte era admirada pelo mundo: França, Itália, Suiça,
+                            Estados Unidos e Londres.
                         </p>
                         <div className="center-image">
                             <Image
@@ -28,12 +32,12 @@ export default function PeloMundo() {
                                 Exposição fixa na Galeria MAM de Paris
                             </span>
                         </div>
-                        <p className="p-margin-bt">
+                        {/* <p className="p-margin-bt">
                             Diferente de todos os homens da sua geração que estavam predestinados a trabalhar na roça , o sábio Sertão traçou planos diferentes para Cícero, seu traço fino esculpiu um futuro bem diferente e marcou com o seu canivete toda a história de Nossa Senhora da Glória.
                         </p>
                         <p>
                             Sem nunca ter observado o trabalho de outros artistas, num ambiente rural, em que o único contato com o mundo exterior era feito através do rádio, a missão de Véio seria introduzir este novo conceito ao seu povo ( e ao mundo), o qual chamamos de “Arte”.
-                        </p>
+                        </p> */}
                         <div className="center-image">
                             <Image
                                 src="./Assets/image.png"
@@ -45,9 +49,9 @@ export default function PeloMundo() {
                                 Exposição fixa na Galeria MAM de Paris
                             </span>
                         </div>
-                        <p>
+                        {/* <p>
                             Sem nunca ter observado o trabalho de outros artistas, num ambiente rural, em que o único contato com o mundo exterior era feito através do rádio, a missão de Véio seria introduzir este novo conceito ao seu povo ( e ao mundo), o qual chamamos de “Arte”.
-                        </p>
+                        </p> */}
                     </ConteinerInConteudo>
                 </ConteudoConteiner>
             </Main>

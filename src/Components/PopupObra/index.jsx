@@ -85,28 +85,28 @@ export default function PopupObra() {
                 <ConteinerDetalhesObra>
                     <section>
                         <h6 className='background-red'>OBRA</h6>
-                        <h1>{'nome da obra'}</h1>
+                        <h1>{obraSelected.nome}</h1>
                         <section>
                             <h5>DETALHES DA OBRA</h5>
                             <ConteinerCaracteristicasObra>
                                 <div>
                                     <dt>Material</dt>
-                                    <dd>{' materialObra'}</dd>
+                                    <dd>{obraSelected.material}</dd>
                                 </div>
 
                                 <div>
                                     <dt>Medidas</dt>
-                                    <dd>{' medidasObra'}</dd>
+                                    <dd>{obraSelected.medidas}</dd>
                                 </div>
 
                                 <div>
                                     <dt>Ano</dt>
-                                    <dd>{' anoObra'}</dd>
+                                    <dd>{obraSelected.ano}</dd>
                                 </div>
 
                                 <div>
                                     <dt>Disponibilidade</dt>
-                                    <dd>{' disponibilidadeObra'}</dd>
+                                    <dd>{obraSelected.disponibilidade}</dd>
                                 </div>
                             </ConteinerCaracteristicasObra>
                         </section>
