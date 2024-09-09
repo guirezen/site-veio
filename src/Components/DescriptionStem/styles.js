@@ -24,12 +24,12 @@ export const BackgroundTop = styled.div`
     position: absolute;
     z-index: 2;
     top: -40px;
-    background-image: url('src/Assets/background/recorte-madeira_down_maior.png');
+    background-image: url('./Assets/background/recorte-madeira_down_maior.png');
     background-repeat: no-repeat;
 
     &:nth-of-type(3) {
         top: 450px;
-        background-image: url('src/Assets/background/recorte-madeira_top_maior.png');
+        background-image: url('./Assets/background/recorte-madeira_top_maior.png');
 
         @media (max-width: 1024px) {
             top: 869px;

@@ -2,332 +2,332 @@
     "gallery": [
         {
             "id": 1,
-            "url": "src/Assets/Obras/Amputado.jpg",
+            "url": "./Assets/Obras/Amputado.jpg",
             "type": "fechado"
         },
         {
             "id": 2,
-            "url": "src/Assets/Obras/Apoiado.jpg",
+            "url": "./Assets/Obras/Apoiado.jpg",
             "type": "fechado"
         },
         {
             "id": 3,
-            "url": "src/Assets/Obras/Arrastado.jpg",
+            "url": "./Assets/Obras/Arrastado.jpg",
             "type": "fechado"
         },
         {
             "id": 4,
-            "url": "src/Assets/Obras/atleta.jpg",
+            "url": "./Assets/Obras/atleta.jpg",
             "type": "fechado"
         },
         {
             "id": 5,
-            "url": "src/Assets/Obras/bichinho.jpg",
+            "url": "./Assets/Obras/bichinho.jpg",
             "type": "fechado"
         },
         {
             "id": 6,
-            "url": "src/Assets/Obras/caranguejo.jpg",
+            "url": "./Assets/Obras/caranguejo.jpg",
             "type": "fechado"
         },
         {
             "id": 7,
-            "url": "src/Assets/Obras/cobra.jpg",
+            "url": "./Assets/Obras/cobra.jpg",
             "type": "fechado"
         },
         {
             "id": 8,
-            "url": "src/Assets/Obras/Desprezado.jpg",
+            "url": "./Assets/Obras/Desprezado.jpg",
             "type": "fechado"
         },
         {
             "id": 9,
-            "url": "src/Assets/Obras/Encostado.jpg",
+            "url": "./Assets/Obras/Encostado.jpg",
             "type": "fechado"
         },
         {
             "id": 10,
-            "url": "src/Assets/Obras/Mascarado.jpg",
+            "url": "./Assets/Obras/Mascarado.jpg",
             "type": "fechado"
         },
         {
             "id": 11,
-            "url": "src/Assets/Obras/pirata.jpg",
+            "url": "./Assets/Obras/pirata.jpg",
             "type": "fechado"
         },
         {
             "id": 12,
-            "url": "src/Assets/Obras/Preto.jpg",
+            "url": "./Assets/Obras/Preto.jpg",
             "type": "fechado"
         },
         {
             "id": 13,
-            "url": "src/Assets/Obras/Sardao.jpg",
+            "url": "./Assets/Obras/Sardao.jpg",
             "type": "fechado"
         },
         {
             "id": 14,
-            "url": "src/Assets/Obras/Tripe.jpg",
+            "url": "./Assets/Obras/Tripe.jpg",
             "type": "fechado"
         },
         {
             "id": 15,
-            "url": "src/Assets/Obras/Vergonha.jpg",
+            "url": "./Assets/Obras/Vergonha.jpg",
             "type": "fechado"
         },
         {
             "id": 16,
-            "url": "src/Assets/Obras/Zanoio.jpg",
+            "url": "./Assets/Obras/Zanoio.jpg",
             "type": "fechado"
         },
         {
             "id": 51,
-            "url": "src/Assets/Obras/Anubis.jpg",
+            "url": "./Assets/Obras/Anubis.jpg",
             "type": "aberto"
         },
         {
             "id": 52,
-            "url": "src/Assets/Obras/ceia.jpg",
+            "url": "./Assets/Obras/ceia.jpg",
             "type": "aberto"
         },
         {
             "id": 53,
-            "url": "src/Assets/Obras/Corujas.jpg",
+            "url": "./Assets/Obras/Corujas.jpg",
             "type": "aberto"
         },
         {
             "id": 54,
-            "url": "src/Assets/Obras/Escada.jpg",
+            "url": "./Assets/Obras/Escada.jpg",
             "type": "aberto"
         },
         {
             "id": 55,
-            "url": "src/Assets/Obras/obra-2.png",
+            "url": "./Assets/Obras/obra-2.png",
             "type": "aberto"
         },
         {
             "id": 56,
-            "url": "src/Assets/Obras/obra-2.png",
+            "url": "./Assets/Obras/obra-2.png",
             "type": "aberto"
         },
         {
             "id": 57,
-            "url": "src/Assets/Obras/obra-2.png",
+            "url": "./Assets/Obras/obra-2.png",
             "type": "aberto"
         },
         {
             "id": 58,
-            "url": "src/Assets/Obras/obra-2.png",
+            "url": "./Assets/Obras/obra-2.png",
             "type": "aberto"
         },
         {
             "id": 59,
-            "url": "src/Assets/Obras/obra-2.png",
+            "url": "./Assets/Obras/obra-2.png",
             "type": "aberto"
         },
         {
             "id": 60,
-            "url": "src/Assets/Obras/obra-2.png",
+            "url": "./Assets/Obras/obra-2.png",
             "type": "aberto"
         },
         {
             "id": 61,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 62,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 63,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 64,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 65,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 66,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 67,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 68,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 69,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 70,
-            "url": "src/Assets/Obras/obra-7.png",
+            "url": "./Assets/Obras/obra-7.png",
             "type": "aberto"
         },
         {
             "id": 71,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 72,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 73,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 74,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 75,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 76,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 77,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 78,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 79,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 80,
-            "url": "src/Assets/Obras/obra-8.png",
+            "url": "./Assets/Obras/obra-8.png",
             "type": "aberto"
         },
         {
             "id": 81,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 82,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 83,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 84,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 85,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 86,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 87,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 88,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 89,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 90,
-            "url": "src/Assets/Obras/obra-6.png",
+            "url": "./Assets/Obras/obra-6.png",
             "type": "aberto"
         },
         {
             "id": 91,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 92,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 93,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 94,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 95,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 96,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 97,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 98,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 99,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         },
         {
             "id": 100,
-            "url": "src/Assets/Obras/Iranian_handicraft.jpg",
+            "url": "./Assets/Obras/Iranian_handicraft.jpg",
             "type": "aberto"
         }
     ]
