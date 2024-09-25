@@ -2,7 +2,7 @@
   "gallery": [
     {
       "id": 0,
-      "url": "./Assets/Obras/troncos abertos/anubis.jpg",
+      "url": "./Assets/Obras/troncos abertos/Anubis.jpg",
       "type": "aberto",
       "nome": "Anubis",
       "material": "Madeira e Tinta Acrílica",
@@ -23,7 +23,7 @@
     },
     {
       "id": 2,
-      "url": "./Assets/Obras/troncos abertos/corujas.jpg",
+      "url": "./Assets/Obras/troncos abertos/Corujas.jpg",
       "type": "aberto",
       "nome": "Série Corujas",
       "material": "Madeira e Tinta Acrílica",
@@ -99,7 +99,7 @@
       "disponibilidade": "Disponível"    },
     {
       "id": 10,
-      "url": "./Assets/Obras/troncos abertos/penitentes.jpg",
+      "url": "./Assets/Obras/troncos abertos/Penitentes.jpg",
       "type": "aberto",
       "nome": "Serie Penitentes",
       "material": "Madeira e Tinta Acrílica",
@@ -108,7 +108,7 @@
       "disponibilidade": "Disponível"    },
     {
       "id": 11,
-      "url": "./Assets/Obras/troncos abertos/presepio.jpg",
+      "url": "./Assets/Obras/troncos abertos/Presepio.jpg",
       "type": "aberto",
       "nome": "Presépio",
       "material": "Madeira e Tinta Acrílica",
@@ -118,7 +118,7 @@
     },
     {
       "id": 12,
-      "url": "./Assets/Obras/troncos abertos/rastro.jpg",
+      "url": "./Assets/Obras/troncos abertos/Rastro.jpg",
       "type": "aberto",
       "nome": "Rastro",
       "material": "Madeira e Tinta Acrílica",
