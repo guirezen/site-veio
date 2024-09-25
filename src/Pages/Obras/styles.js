@@ -11,6 +11,10 @@ export const ConteinerMain = styled.main`
 export const ConteinerInMain = styled.div`
     max-width: 1094px;
     width: 80%;
+
+    @media (max-width: 600px) {
+        width: 100%;
+    } 
 `
 
 export const ConteinerTitleFilter = styled.div`
@@ -21,6 +25,10 @@ export const ConteinerTitleFilter = styled.div`
 
     @media (min-width: 900px) {
         min-width: 710px;
+    } 
+
+    @media (max-width: 600px) {
+        padding: 0 20px 0 20px;
     } 
 `
 
@@ -44,7 +52,18 @@ export const ConteinerGrid = styled.div`
         width: 100%;
         height: 315px;
         cursor: pointer;
+        object-fit: cover;
     }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(auto-fit, 100%);
+
+            img {
+                width: 100%;
+                aspect-ratio: 266 / 398;
+                height: auto;
+            }
+        }
 `
 
 export const ConteinerPagination = styled.div`

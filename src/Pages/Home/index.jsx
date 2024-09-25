@@ -36,7 +36,7 @@ export default function Home() {
                         O<br />
                         IMAGINÁ-<br />
                         RIO DE<br />
-                        <span>VÉI<b>O</b></span>
+                        <span>VÉIO</span>
                     </MainTitle>
                 </ConteinerInsideTitle>
             </ConteinerOutTitle>

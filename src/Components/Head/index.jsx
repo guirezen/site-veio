@@ -13,9 +13,7 @@ export default function Header() {
                         <Link
                             className="botoes-menu-superior"
                             to={'/'}>
-                            <h4>
-                                VÉI<b>O</b>
-                            </h4>
+                            <img src="/Assets/logo_preta.png" />
                         </Link>
                     </RedSquary>
                 </LogoConteiner>

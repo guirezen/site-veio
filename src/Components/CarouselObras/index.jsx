@@ -17,16 +17,18 @@ const StyledIconForward = styled(ArrowForwardIosOutlined)(() => ({
 export default function CarouselObras() {
     const {
         checkerRandomListRepeat,
-        obraSelected,
+        handleOpenPopUp,
         setObrasSelected,
         obrasCarousel,
         contador,
-        setContador
+        setContador,
+        obraSelected
     } = useObrasContext()
 
     useEffect(() => {
         checkerRandomListRepeat()
-    }, [])
+    }, [obraSelected])
+
     const handleArrowBack = () => {
         if (contador > 1) {
             let contadorAtualizado = contador - 1
@@ -59,7 +61,13 @@ export default function CarouselObras() {
                 <h6>OUTRAS OBRAS</h6>
                 <ConteinerList>
                     {obrasCarousel.slice(contador + 1, contador + 5).map(obra => (
-                        <ItensList key={obra.id}>
+                        <ItensList 
+                            key={obra.id}
+                            onClick={() => {
+                                handleOpenPopUp()
+                                setObrasSelected(obra)
+                            }}
+                        >
                             <img src={obra.url} />
                         </ItensList>
                     ))}

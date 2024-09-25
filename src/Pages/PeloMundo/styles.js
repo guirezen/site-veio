@@ -5,6 +5,7 @@ export const Main = styled.main`
     padding: 0 30px;
     padding-bottom: 170px;
     position: relative;
+    margin-top: 100px;
 `
 
 export const BannerConteiner = styled.div`
@@ -13,11 +14,16 @@ export const BannerConteiner = styled.div`
     position: absolute;
     background-image: url('./Assets/background/mundo_maior.png');
     background-repeat: no-repeat;
+    background-position: 50% 50%;
     top: 0px;
     z-index: 2;
 
-    @media (max-width: 900px) {
-        background-position: 10% 50%;   
+    /* @media (max-width: 1400px) {
+        background-position: 50% 50%;
+    }*/
+
+    @media (max-width: 600px) {
+        background-position: 28% 50%;
     }
 `
 

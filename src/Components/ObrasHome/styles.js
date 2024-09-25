@@ -12,6 +12,10 @@ export const GridConteiner = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 0 30px 104px 30px;
+
+    @media (max-width: 600px) {
+        padding: 0 0px 104px 0px;
+    }
 `
 
 export const TitleConteiner = styled.div`
@@ -40,11 +44,27 @@ export const GridObras = styled.div`
         height: 398px;
         overflow: hidden;
     }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(auto-fit, 100%);
+
+        div {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 266 / 398;
+
+            img {
+                aspect-ratio: 266 / 398;
+                height: auto;
+            }
+        }
+    }
 `
 
 export const ImgObra = styled.img`
-    width: 266px;
+    width: 100%;
     height: 398px;
+    object-fit: cover;
     filter: brightness(53%);
     transition: transform 0.3s ease;
     cursor: pointer;

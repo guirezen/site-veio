@@ -1,6 +1,6 @@
 import { FooterStyled, ConteinerTitle, BackgroundTop } from "./styles"
 
-const DESCRICAO = "© 2024 Site desenvolvido por Rafael Oliva e Guilherme."
+const DESCRICAO = "© 2024 Site desenvolvido por Rafael Oliva e Guilherme Rezende."
 
 export default function Footer() {
 
@@ -8,7 +8,7 @@ export default function Footer() {
         <FooterStyled>
             <BackgroundTop />
             <ConteinerTitle>
-                <h3>VÉI<b>O</b></h3>
+                <img src="\Assets\logo_vermelha.png" />
                 <span>{DESCRICAO}</span>
             </ConteinerTitle>
         </FooterStyled>

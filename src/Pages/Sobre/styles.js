@@ -18,7 +18,7 @@ export const BannerConteiner = styled.div`
     z-index: 2;
 
     @media (max-width: 900px) {
-        background-position: 10% 50%;   
+        background-position: 28% 50%;
     }
 `
 

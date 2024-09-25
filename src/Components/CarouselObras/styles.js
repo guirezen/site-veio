@@ -62,6 +62,7 @@ export const ConteinerList = styled.ul`
 export const ItensList = styled.li`
     width: 119px;
     height: 178px;
+    cursor: pointer;
 
     &:has(+ li) {
         margin-right: 13px;
@@ -70,6 +71,7 @@ export const ItensList = styled.li`
     img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 
     &:nth-of-type(4) {

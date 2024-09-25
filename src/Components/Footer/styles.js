@@ -24,10 +24,8 @@ export const ConteinerTitle = styled.div`
     display: grid;
     justify-content: center;
 
-    h3 {
-        font-size: 24px;
-        color: #B85151;
-        letter-spacing: 4.8px;
+    img {
+        margin-bottom: 10px;
     }
 
     span {

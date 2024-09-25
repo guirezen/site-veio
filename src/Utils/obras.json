@@ -2,10 +2,10 @@
   "gallery": [
     {
       "id": 0,
-      "url": "./Assets/Obras/troncos abertos/Anubis.jpg",
+      "url": "./Assets/Obras/troncos abertos/anubis.jpg",
       "type": "aberto",
       "nome": "Anubis",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "55,5cm x 43cm x 177,1cm",
       "ano": 2000,
       "disponibilidade": "Disponível"
@@ -15,16 +15,18 @@
       "url": "./Assets/Obras/troncos abertos/ceia.jpg",
       "type": "aberto",
       "nome": "Miniatura  última ceia",
-      "material": "",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "6cm x 3 cm",
       "ano": 1995,
-      "disponibilidade": "Disponível"    },
+      "disponibilidade": "Disponível",
+      "horientacao": "horizontal"       
+    },
     {
       "id": 2,
-      "url": "./Assets/Obras/troncos abertos/Corujas.jpg",
+      "url": "./Assets/Obras/troncos abertos/corujas.jpg",
       "type": "aberto",
       "nome": "Série Corujas",
-      "material": "",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "15 cm",
       "ano": 2024,
       "disponibilidade": "Disponível"    },
@@ -33,7 +35,7 @@
       "url": "./Assets/Obras/troncos abertos/Escada.jpg",
       "type": "aberto",
       "nome": "Escada",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "8,6 cm x 13 cm x 37,5 cm",
       "ano": "",
       "disponibilidade": "Disponível"    },
@@ -42,10 +44,12 @@
       "url": "./Assets/Obras/troncos abertos/homem.jpg",
       "type": "aberto",
       "nome": "Miniatura homem em um cavalo",
-      "material": "",
+      "material": "Madeira",
       "medidas": "",
       "ano": "",
-      "disponibilidade": "Disponível"    },
+      "disponibilidade": "Disponível",
+      "horientacao": "horizontal"
+    },
     {
       "id": 5,
       "url": "./Assets/Obras/troncos abertos/imagem.jpg",
@@ -69,16 +73,18 @@
       "url": "./Assets/Obras/troncos abertos/palhaco.jpg",
       "type": "aberto",
       "nome": "Série Palhaços",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "",
       "ano": 2023,
-      "disponibilidade": "Disponível"    },
+      "disponibilidade": "Disponível",
+      "horientacao": "horizontal"   
+    },
     {
       "id": 8,
-      "url": "./Assets/Obras/troncos abertos/passaros.jpg",
+      "url": "./Assets/Obras/troncos abertos/passaro.jpg",
       "type": "aberto",
       "nome": "Dois pássaros",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "10,5 cm x 6,3 cm x 27 cm",
       "ano": 2019,
       "disponibilidade": "Disponível"    },
@@ -93,47 +99,51 @@
       "disponibilidade": "Disponível"    },
     {
       "id": 10,
-      "url": "./Assets/Obras/troncos abertos/Penitentes.jpg",
+      "url": "./Assets/Obras/troncos abertos/penitentes.jpg",
       "type": "aberto",
       "nome": "Serie Penitentes",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "",
       "ano": 2024,
       "disponibilidade": "Disponível"    },
     {
       "id": 11,
-      "url": "./Assets/Obras/troncos abertos/Presepio.jpg",
+      "url": "./Assets/Obras/troncos abertos/presepio.jpg",
       "type": "aberto",
-      "nome": "Anubis",
-      "material": "Madeira",
+      "nome": "Presépio",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "55,5cm x 43cm x 177,1cm",
       "ano": 2019,
-      "disponibilidade": "Disponível"    },
+      "disponibilidade": "Disponível"
+    },
     {
       "id": 12,
-      "url": "./Assets/Obras/troncos abertos/Rastro.jpg",
+      "url": "./Assets/Obras/troncos abertos/rastro.jpg",
       "type": "aberto",
       "nome": "Rastro",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "29 cm x 11,5 cm x 4 cm",
       "ano": 1984,
-      "disponibilidade": "Disponível"    },
+      "disponibilidade": "Disponível",
+      "horientacao": "horizontal"
+    },
     {
       "id": 13,
       "url": "./Assets/Obras/troncos fechados/Amputado.jpg",
       "type": "fechado",
       "nome": "Amputado",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "81cm x 56cm x 74cm",
       "ano": 2014,
-      "disponibilidade": "Disponível"
+      "disponibilidade": "Disponível",
+      "horientacao": "horizontal"
     },
     {
       "id": 14,
       "url": "./Assets/Obras/troncos fechados/Apoiado.jpg",
       "type": "fechado",
       "nome": "Apoiado",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "84cm x 53cm x 87cm",
       "ano": 2014,
       "disponibilidade": "Disponível"
@@ -143,17 +153,18 @@
       "url": "./Assets/Obras/troncos fechados/Arrastado.jpg",
       "type": "fechado",
       "nome": "Arrastado",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "103cm x 86cm x 50 cm",
       "ano": 2018,
-      "disponibilidade": "Disponível"
+      "disponibilidade": "Disponível",
+      "horientacao": "horizontal"
     },
     {
       "id": 16,
       "url": "./Assets/Obras/troncos fechados/atleta.jpg",
       "type": "fechado",
       "nome": "O atleta",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "51cm x 72 cm x 97,5cm",
       "ano": 2000,
       "disponibilidade": "Disponível"
@@ -163,7 +174,7 @@
       "url": "./Assets/Obras/troncos fechados/bichinho.jpg",
       "type": "fechado",
       "nome": "Bichinho",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "35cm x 30cm x 62 cm",
       "ano": 2019,
       "disponibilidade": "Disponível"
@@ -173,7 +184,7 @@
       "url": "./Assets/Obras/troncos fechados/caranguejo.jpg",
       "type": "fechado",
       "nome": "Caranguejo",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "35cm x 64cm x 74cm",
       "ano": 2018,
       "disponibilidade": "Disponível"
@@ -183,7 +194,7 @@
       "url": "./Assets/Obras/troncos fechados/cobra.jpg",
       "type": "fechado",
       "nome": "A cobra",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "209cm x 14cm x 17cm",
       "ano": 2023,
       "disponibilidade": "Disponível"
@@ -193,7 +204,7 @@
       "url": "./Assets/Obras/troncos fechados/Desprezado.jpg",
       "type": "fechado",
       "nome": "Desprezado",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "58cm x 48,5cm x 68cm",
       "ano": 2018,
       "disponibilidade": "Disponível"
@@ -203,7 +214,7 @@
       "url": "./Assets/Obras/troncos fechados/Encostado.jpg",
       "type": "fechado",
       "nome": "Encostado",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "58cm x 27cm x 71cm",
       "ano": 2020,
       "disponibilidade": "Disponível"
@@ -213,7 +224,7 @@
       "url": "./Assets/Obras/troncos fechados/Mascarado.jpg",
       "type": "fechado",
       "nome": "Mascarado",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "37cm x 36cm x 110,5cm",
       "ano": 2017,
       "disponibilidade": "Disponível"
@@ -223,7 +234,7 @@
       "url": "./Assets/Obras/troncos fechados/pirata.jpg",
       "type": "fechado",
       "nome": "O pirata",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "36cm x 25cm x 43cm",
       "ano": 2015,
       "disponibilidade": "Disponível"
@@ -233,7 +244,7 @@
       "url": "./Assets/Obras/troncos fechados/Preto.jpg",
       "type": "fechado",
       "nome": "Todo Preto",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "39cm x 80cm x 140cm",
       "ano": 2014,
       "disponibilidade": "Disponível"
@@ -243,17 +254,18 @@
       "url": "./Assets/Obras/troncos fechados/Sardao.jpg",
       "type": "fechado",
       "nome": "Sardão",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "134cm x 46cm x 36 cm",
       "ano": 2018,
-      "disponibilidade": "Disponível"
+      "disponibilidade": "Disponível",
+      "horientacao": "horizontal"
     },
     {
       "id": 26,
       "url": "./Assets/Obras/troncos fechados/Tripe.jpg",
       "type": "fechado",
       "nome": "Tripé",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "35cm x 30cm x 50,5cm",
       "ano": 2020,
       "disponibilidade": "Disponível"
@@ -263,7 +275,7 @@
       "url": "./Assets/Obras/troncos fechados/Vergonha.jpg",
       "type": "fechado",
       "nome": "Sem Vergonha",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "80cm x 53cm x 147cm",
       "ano": 2015,
       "disponibilidade": "Disponível"
@@ -273,9 +285,75 @@
       "url": "./Assets/Obras/troncos fechados/Zanoio.jpg",
       "type": "fechado",
       "nome": "Zanoio",
-      "material": "Madeira",
+      "material": "Madeira e Tinta Acrílica",
       "medidas": "43cm x 52cm x 148cm",
       "ano": 2015,
+      "disponibilidade": "Disponível"
+    }
+    ,
+    {
+      "id": 29,
+      "url": "./Assets/Obras/tinta/caes.jpg",
+      "nome": "Série Os 'Cão' do meu inferno",
+      "material": "Madeira e Tinta Acrílica",
+      "horientacao": "horizontal"
+    }
+    ,
+    {
+      "id": 30,
+      "url": "./Assets/Obras/tinta/coruja.jpg",
+      "nome": "Coruja",
+      "material": "Madeira e Tinta Acrílica",
+      "medidas": "43cm x 52cm x 148cm"
+    }
+    ,
+    {
+      "id": 31,
+      "url": "./Assets/Obras/tinta/esquecidos.jpg",
+      "nome": "Os Esquecidos",
+      "material": "Madeira e Tinta Acrílica",
+      "horientacao": "horizontal"
+    },
+    {
+      "id": 32,
+      "url": "./Assets/Obras/cera/primeiro.jpg",
+      "nome": "Seu primeiro material de trabalho",
+      "material": "Cera de Abelha"
+    }
+    ,
+    {
+      "id": 33,
+      "url": "./Assets/Obras/cera/primeiro2.jpg",
+      "nome": "Seu primeiro material de trabalho",
+      "material": "Cera de Abelha"
+    }
+    ,
+    {
+      "id": 34,
+      "url": "./Assets/Obras/cera/santa.jpg",
+      "nome": "Obra em Cera de Abelha ( A Santa)",
+      "material": "Cera de Abelha",
+      "medidas": "5cm",
+      "ano": 2015
+    },
+    {
+      "id": 35,
+      "url": "./Assets/Obras/troncos abertos/virgem.jpg",
+      "type": "aberto",
+      "nome": "Série A virgem das ilusões",
+      "material": "Madeira e Tinta Acrílica",
+      "medidas": "20cm",
+      "ano": 2020,
+      "disponibilidade": "Disponível"
+    },
+    {
+      "id": 36,
+      "url": "./Assets/Obras/troncos abertos/caipora.jpg",
+      "type": "aberto",
+      "nome": "Caipora",
+      "material": "Madeira",
+      "medidas": "8,6 cm x 30 cm x 27 cm",
+      "ano": 2024,
       "disponibilidade": "Disponível"
     }
   ]

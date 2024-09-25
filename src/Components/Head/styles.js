@@ -41,11 +41,9 @@ export const RedSquary = styled.div`
     margin-left: 38px;
     cursor: pointer;
 
-    h4 {
-        font-weight: lighter;
-        letter-spacing: 3px;
-        font-size: 15px;
-        margin-bottom: 17px;
+    img {
+        width: 50px;
+        margin-bottom: 12px;
     }
 `
 

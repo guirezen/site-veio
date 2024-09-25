@@ -44,7 +44,7 @@ const StyledCloseIcon = styled(IconButton)(() => ({
     'svg': {
         fontSize: '30px'
     },
-    '@media (max-width: 600px)' : {
+    '@media (max-width: 600px)': {
         right: '6px!important',
         top: '7px!important',
     }
@@ -78,11 +78,11 @@ export default function PopupObra() {
             >
                 <CloseIcon />
             </StyledCloseIcon>
-            <ConteinerPopupObra>
+            <ConteinerPopupObra className={obraSelected.horientacao && 'image-portrait'}>
                 <ConteinerImage>
-                    <img src={obraSelected.url} />
+                    <img src={obraSelected.url} className={obraSelected.horientacao && 'image-portrait'} />
                 </ConteinerImage>
-                <ConteinerDetalhesObra>
+                <ConteinerDetalhesObra className={obraSelected.horientacao && 'image-portrait'}>
                     <section>
                         <h6 className='background-red'>OBRA</h6>
                         <h1>{obraSelected.nome}</h1>
@@ -91,23 +91,21 @@ export default function PopupObra() {
                             <ConteinerCaracteristicasObra>
                                 <div>
                                     <dt>Material</dt>
-                                    <dd>{obraSelected.material}</dd>
+                                    <dd>{obraSelected?.material}</dd>
                                 </div>
+                                {obraSelected.medidas &&
+                                    <div>
+                                        <dt>Medidas</dt>
+                                        <dd>{obraSelected.medidas}</dd>
+                                    </div>
+                                }
 
-                                <div>
-                                    <dt>Medidas</dt>
-                                    <dd>{obraSelected.medidas}</dd>
-                                </div>
-
-                                <div>
-                                    <dt>Ano</dt>
-                                    <dd>{obraSelected.ano}</dd>
-                                </div>
-
-                                <div>
-                                    <dt>Disponibilidade</dt>
-                                    <dd>{obraSelected.disponibilidade}</dd>
-                                </div>
+                                {obraSelected.ano &&
+                                    <div>
+                                        <dt>Ano</dt>
+                                        <dd>{obraSelected.ano}</dd>
+                                    </div>
+                                }
                             </ConteinerCaracteristicasObra>
                         </section>
                     </section>

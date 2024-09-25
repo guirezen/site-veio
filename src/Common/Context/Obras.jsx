@@ -77,11 +77,11 @@ export const useObrasContext = () => {
             return (
                 <>
                     <span className="titulo-part-1">
-                        <strong>{firstPart.slice(0, 3)}</strong>{firstPart.slice(3)}
+                        {firstPart}
                     </span>
                     <br />
                     <span className="titulo-part-2">
-                        {secondPart.slice(0, secondPart.length - 2)}<strong>{secondPart.slice(-4, -2)}</strong>{secondPart.slice(-2)}
+                        {secondPart}
                     </span>
                 </>
             )

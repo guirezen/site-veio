@@ -11,7 +11,7 @@ export default function PeloMundo() {
             <Main>
                 <TitleConteiner>
                     <div>
-                        <h1>A obra de Véio em cartaz no<br /> brasil e no mundo</h1>
+                        <h1>A obra de Véio em cartaz no<br /> Brasil e no mundo</h1>
                         <span>Por Julia Katiene</span>
                     </div>
                 </TitleConteiner>

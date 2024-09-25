@@ -6,7 +6,11 @@ export const ConteinerPopupObra = styled.div`
     position: relative;
     height: 647px;
 
-    @media (max-width: 900px) {
+    &.image-portrait {
+        justify-content: space-between;
+    }
+
+    @media (max-width: 1200px) {
         height: auto;
         flex-direction: column;
         padding: 25px 0;
@@ -32,28 +36,49 @@ export const ConteinerImage = styled.div`
         box-shadow: 10px 10px 23px -17px rgba(0,0,0,0.75);
     }
 
+    .image-portrait {
+        width: 527px;
+        height: auto;
+    }
+
     @media (max-width: 900px) {
         width: 100%;
         right: 0;
         text-align: center;
         margin-bottom: 20px;
+
+        &.image-portrait {
+            width: 100%;
+        }
+
+        .image-portrait {
+            width: 95%;
+        }
     }
 
     @media (max-width: 1125px) and (min-width: 900px) {
-        width: 41%;
-        right: 5%;
+        width: 100%;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
         img {
             width: 281px;
             height: 427px;
         }
     }
-` 
+`
 
 export const ConteinerDetalhesObra = styled.div`
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &.image-portrait {
+        width: 59%;
+    }
 
     .background-red {
         font-size: 10px;
@@ -87,6 +112,22 @@ export const ConteinerDetalhesObra = styled.div`
 
     @media (min-width: 900px) {
         height: 527px;
+
+        &.image-portrait {
+            width: 59%;
+        }
+    }
+
+    @media (max-width: 900px) {
+        width: 95%;
+
+        &.image-portrait {
+            width: 95%;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
     }
 `
 
