@@ -54,9 +54,9 @@ function NavbarMenu(props) {
 
     const drawer = (
         <CustomBox onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                VÉI<b>O</b>
-            </Typography>
+            <Link to={'/'}>
+                <img src='/Assets/logo_vermelha.png' style={{width: '70px', marginTop: '30px'}}/>
+            </Link>
             <Divider />
             <List>
                 {navItems.map((item) => (

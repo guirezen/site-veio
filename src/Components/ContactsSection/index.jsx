@@ -17,9 +17,9 @@ export default function ContactsSection() {
                         <div>
                             <EmailIcon className='icon-button' fontSize='large' />
                         </div>
-                        <ContactConteiner>
+                        <ContactConteiner id='contact-email'>
                             <span className='label-contact'>Nos envie um email</span>
-                            <span className='information-contacts'>veio@hotmail.com</span>
+                            <span className='information-contacts'>contatoartistaveio@gmail.com</span>
                         </ContactConteiner>
                     </Buttons>
                     <Buttons>

@@ -29,6 +29,10 @@ export const TitleConteiner = styled.div`
         letter-spacing: 3px;
         color: #303030;
     }
+
+    @media (max-width: 600px) {
+        padding-left: 20px;
+    } 
 `
 
 export const GridObras = styled.div`

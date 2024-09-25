@@ -77,13 +77,12 @@ export const ContactConteiner = styled.div`
     margin-left: 30px;
     text-align: left;
     font-family: 'Montserrat';
-
     .label-contact {
         font-size: 15px;
     }
 
     .information-contacts {
-        font-size: 18px;
+        font-size: 15px;
         color: #fff;
     }
 `

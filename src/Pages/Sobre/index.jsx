@@ -8,7 +8,7 @@ export default function PageSobre() {
             <Main>
                 <TitleConteiner>
                     <div>
-                        <h1>A história do artista Cícero<br />Alves dos Santos, Véio!</h1>
+                        <h1>A história do artista Cícero Alves dos Santos, Véio!</h1>
                         <span>Por Julia Katiene</span>
                     </div>
                 </TitleConteiner>
