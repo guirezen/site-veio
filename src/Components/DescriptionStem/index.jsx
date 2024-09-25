@@ -1,4 +1,4 @@
-import { BackgroundTop, ConteinerCarousel, ConteinerConteudo, ConteinerDescricao, ConteinerIndicadores, ConteinerSeta, ConteinerTitulo, ImgObra, OutDescribeConteiner, Section } from "./styles";
+import { BackgroundTop, ContainerImgObra, ConteinerCarousel, ConteinerConteudo, ConteinerDescricao, ConteinerIndicadores, ConteinerSeta, ConteinerTitulo, OutDescribeConteiner, Section } from "./styles";
 import { IconButton, MobileStepper, styled } from "@mui/material";
 import { ArrowBackIos, ArrowBackIosNew, ArrowForwardIos, Height } from "@mui/icons-material";
 import { useEffect, useState } from "react";
@@ -43,9 +43,9 @@ export default function DescriptionStem() {
                         </IconButton>
                     </ConteinerSeta>
                     <ConteinerConteudo>
-                        <div>
-                            <ImgObra src={stemType[activateStep]?.imagem} />
-                        </div>
+                        <ContainerImgObra>
+                            <img src={stemType[activateStep]?.imagem} />
+                        </ContainerImgObra>
                         <OutDescribeConteiner>
                             <ConteinerTitulo>
                                 <h1>{formatTittle(stemType[activateStep]?.tipoTronco, stemType[activateStep]?.id)}</h1>

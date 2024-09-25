@@ -76,9 +76,8 @@ export const ConteinerSeta = styled.div`
     }
 `
 
-export const ImgObra = styled.img`
+export const ContainerImgObra = styled.div`
     width: 288px;
-    height: 371px;
 
     @media (min-width: 1024px) {
         margin-right: 97px;
@@ -86,6 +85,11 @@ export const ImgObra = styled.img`
 
     @media (max-width: 1024px) {
         margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
     }
 `
 
