@@ -25,6 +25,8 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
         '@media(max-width: 900px)': {
             width: '600px',
             margin: '0',
+            overflow: 'scroll',
+
         },
         '@media(min-width: 900px)': {
             width: '70%',
