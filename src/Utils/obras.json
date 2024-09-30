@@ -294,6 +294,7 @@
     {
       "id": 29,
       "url": "./Assets/Obras/tinta/caes.jpg",
+      "type": "aberto",
       "nome": "Série Os 'Cão' do meu inferno",
       "material": "Madeira e Tinta Acrílica",
       "horientacao": "horizontal"
@@ -302,6 +303,7 @@
     {
       "id": 30,
       "url": "./Assets/Obras/tinta/coruja.jpg",
+      "type": "aberto",
       "nome": "Coruja",
       "material": "Madeira e Tinta Acrílica",
       "medidas": "43cm x 52cm x 148cm"
@@ -354,6 +356,40 @@
       "material": "Madeira",
       "medidas": "8,6 cm x 30 cm x 27 cm",
       "ano": 2024,
+      "disponibilidade": "Disponível"
+    },
+    {
+      "id": 37,
+      "url": "./Assets/Obras/troncos abertos/forca.jpg",
+      "type": "aberto",
+      "nome": "A base da força",
+      "material": "Madeira",
+      "medidas": "26cm x 24 cm x 117cm",
+      "ano": 2001,
+      "disponibilidade": "Disponível"
+    },
+    {
+      "id": 38,
+      "url": "./Assets/Obras/troncos abertos/palhaco2.jpg",
+      "type": "aberto",
+      "nome": "Série Palhaços",
+      "material": "Madeira e Tinta Acrílica",
+      "disponibilidade": "Disponível"
+    },
+    {
+      "id": 39,
+      "url": "./Assets/Obras/troncos abertos/palhaco3.jpg",
+      "type": "aberto",
+      "nome": "Série Palhaços",
+      "material": "Madeira e Tinta Acrílica",
+      "disponibilidade": "Disponível"
+    },
+    {
+      "id": 40,
+      "url": "./Assets/Obras/troncos abertos/palhaco4.jpg",
+      "type": "aberto",
+      "nome": "Série Palhaços",
+      "material": "Madeira e Tinta Acrílica",
       "disponibilidade": "Disponível"
     }
   ]

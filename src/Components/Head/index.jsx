@@ -8,15 +8,15 @@ export default function Header() {
     return (
         <HeaderStyled pathname={param}>
             <Navbar>
-                <LogoConteiner>
-                    <RedSquary>
-                        <Link
-                            className="botoes-menu-superior"
-                            to={'/'}>
+                <Link
+                    className="botoes-menu-superior"
+                    to={'/'}>
+                    <LogoConteiner>
+                        <RedSquary>
                             <img src="/Assets/logo_preta.png" />
-                        </Link>
-                    </RedSquary>
-                </LogoConteiner>
+                        </RedSquary>
+                    </LogoConteiner>
+                </Link>
                 <ListConteiner>
                     <List pathname={param}>
                         <div>
