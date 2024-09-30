@@ -3,14 +3,16 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Buttons, ButtonsConteiner, ContactConteiner, ConteinerSection, TitleConteiner } from "./styles";
 import WhatsappLink from '../WhatsappLink';
+import { useTranslation } from 'react-i18next';
 
 export default function ContactsSection() {
+    const { t } = useTranslation();
 
     return (
         <ConteinerSection id="ancoraContatos">
             <div>
                 <TitleConteiner>
-                    <h1>CONTATO</h1>
+                    <h1>{t('titleContacts')}</h1>
                 </TitleConteiner>
                 <ButtonsConteiner>
                     <Buttons>
@@ -18,7 +20,7 @@ export default function ContactsSection() {
                             <EmailIcon className='icon-button' fontSize='large' />
                         </div>
                         <ContactConteiner id='contact-email'>
-                            <span className='label-contact'>Nos envie um email</span>
+                            <span className='label-contact'>{t('titleEmail')}</span>
                             <span className='information-contacts'>contatoartistaveio@gmail.com</span>
                         </ContactConteiner>
                     </Buttons>
@@ -28,7 +30,7 @@ export default function ContactsSection() {
                         </div>
                         <WhatsappLink>
                             <ContactConteiner>
-                                <span className='label-contact'>Fale pelo whatsapp</span>
+                                <span className='label-contact'>{t('titleWhatsapp')}</span>
                                 <span className='information-contacts'>+55 79 999447319</span>
                             </ContactConteiner>
                         </WhatsappLink>

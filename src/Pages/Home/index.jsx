@@ -5,12 +5,14 @@ import ObrasHome from "../../Components/ObrasHome";
 import { BackgroundHome, ConteinerInsideTitle, ConteinerOutTitle, MainTitle } from "./styles";
 import { useObrasContext } from "../../Common/Context/Obras";
 import { useLocation } from "react-router";
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
     const {
         filterObras
     } = useObrasContext()
     const location = useLocation();
+    const { t } = useTranslation()
 
     useEffect(() => {
         const hash = location.hash;
@@ -33,10 +35,7 @@ export default function Home() {
             <ConteinerOutTitle>
                 <ConteinerInsideTitle>
                     <MainTitle>
-                        O<br />
-                        IMAGINÁ-<br />
-                        RIO DE<br />
-                        <span>VÉIO</span>
+                        O<br />IMAGINÁ-<br />RIO DE<br /><span>VÉIO</span>
                     </MainTitle>
                 </ConteinerInsideTitle>
             </ConteinerOutTitle>

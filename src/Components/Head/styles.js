@@ -68,6 +68,7 @@ export const List = styled.ul`
     display: inherit;
     width: 100%;
     justify-content: right;
+    position: relative;
 
     div {
         display: inherit;

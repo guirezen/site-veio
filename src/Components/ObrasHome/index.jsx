@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { useObrasContext } from "../../Common/Context/Obras"
 import { ButtonAllWorks, ConteinerSection, GridConteiner, GridObras, ImgObra, TitleConteiner } from "./styles"
 import PopupObra from "../PopupObra"
+import { useTranslation } from "react-i18next"
 
 export default function ObrasHome() {
     const {
@@ -10,6 +11,7 @@ export default function ObrasHome() {
         obraSelected,
         setObrasSelected
     } = useObrasContext()
+    const { t } = useTranslation()
 
     return (
         <ConteinerSection>
@@ -17,7 +19,8 @@ export default function ObrasHome() {
                 <GridConteiner>
                     <TitleConteiner>
                         <h1>
-                            <b>O</b>BRAS
+                            {/* <b>O</b>BRAS */}
+                            {t('titleWorksHome')}
                         </h1>
                     </TitleConteiner>
                     <GridObras>
@@ -35,7 +38,7 @@ export default function ObrasHome() {
                     </GridObras>
                     <div>
                         <Link to={'/obras'}>
-                            <ButtonAllWorks>VER TODAS</ButtonAllWorks>
+                            <ButtonAllWorks>{t('buttonSeeAllsWorks')}</ButtonAllWorks>
                         </Link>
                     </div>
                 </GridConteiner>

@@ -12,6 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
+import LanguageSelect from '../LanguageSelect';
 
 const drawerWidth = 240;
 const navItems = ['SOBRE', 'OBRAS', 'PELO MUNDO', 'CONTATO'];
@@ -53,9 +54,10 @@ function NavbarMenu(props) {
     }
 
     const drawer = (
-        <CustomBox onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+        <CustomBox sx={{ textAlign: 'center' }}>
+            <LanguageSelect />
             <Link to={'/'}>
-                <img src='/Assets/logo_vermelha.png' style={{width: '70px', marginTop: '30px'}}/>
+                <img src='/Assets/logo_vermelha.png' style={{ width: '70px', marginTop: '30px' }} />
             </Link>
             <Divider />
             <List>

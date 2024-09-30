@@ -4,6 +4,7 @@ import FilterList from "../../Components/FilterList";
 import { useEffect } from "react";
 import { useObrasContext } from "../../Common/Context/Obras";
 import PopupObra from "../../Components/PopupObra";
+import { useTranslation } from "react-i18next";
 
 const CustomPagination = styled(Pagination)(() => ({
     '.MuiButtonBase-root': {
@@ -28,6 +29,7 @@ export default function ObrasPage() {
         handleOpenPopUp,
         setObrasSelected
     } = useObrasContext()
+    const { t } = useTranslation();
 
     useEffect(() => {
         filterObras()
@@ -43,9 +45,7 @@ export default function ObrasPage() {
             <ConteinerInMain>
                 <ConteinerTitleFilter>
                     <ConteinerTitle>
-                        <h1>
-                            OBRAS
-                        </h1>
+                        <h1>{t('titleWorksHome')}</h1>
                     </ConteinerTitle>
                     <div>
                         <FilterList />

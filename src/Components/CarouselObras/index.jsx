@@ -3,6 +3,7 @@ import { ConteinerArrowButton, ConteinerList, ConteinerOutCarousel, ConteinerSec
 import { styled } from "@mui/material";
 import { useObrasContext } from "../../Common/Context/Obras";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const StyledIconBack = styled(ArrowBackIosNewOutlined)(() => ({
     fontSize: '35px',
@@ -24,6 +25,7 @@ export default function CarouselObras() {
         setContador,
         obraSelected
     } = useObrasContext()
+    const { t } = useTranslation();
 
     useEffect(() => {
         checkerRandomListRepeat()
@@ -58,7 +60,7 @@ export default function CarouselObras() {
                 </button>
             </ConteinerArrowButton>
             <ConteinerSection>
-                <h6>OUTRAS OBRAS</h6>
+                <h6>{t('otherWorks')}</h6>
                 <ConteinerList>
                     {obrasCarousel.slice(contador + 1, contador + 5).map(obra => (
                         <ItensList 

@@ -5,6 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useObrasContext } from '../../Common/Context/Obras';
 import { ConteinerCaracteristicasObra, ConteinerDetalhesObra, ConteinerImage, ConteinerPopupObra } from './styles';
 import CarouselObras from '../CarouselObras';
+import { useTranslation } from 'react-i18next';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -59,6 +60,7 @@ export default function PopupObra() {
         handleClosePopUp,
         obraSelected
     } = useObrasContext();
+    const { t } = useTranslation();
 
     return (
         <BootstrapDialog
@@ -86,10 +88,10 @@ export default function PopupObra() {
                 </ConteinerImage>
                 <ConteinerDetalhesObra className={obraSelected.horientacao && 'image-portrait'}>
                     <section>
-                        <h6 className='background-red'>OBRA</h6>
+                        <h6 className='background-red'>{t('titleWorksHome')}</h6>
                         <h1>{obraSelected.nome}</h1>
                         <section>
-                            <h5>DETALHES DA OBRA</h5>
+                            <h5>{t('workPopup')}</h5>
                             <ConteinerCaracteristicasObra>
                                 <div>
                                     <dt>Material</dt>
@@ -97,14 +99,14 @@ export default function PopupObra() {
                                 </div>
                                 {obraSelected.medidas &&
                                     <div>
-                                        <dt>Medidas</dt>
+                                        <dt>{t('medidasWork')}</dt>
                                         <dd>{obraSelected.medidas}</dd>
                                     </div>
                                 }
 
                                 {obraSelected.ano &&
                                     <div>
-                                        <dt>Ano</dt>
+                                        <dt>{t('yearWork')}</dt>
                                         <dd>{obraSelected.ano}</dd>
                                     </div>
                                 }

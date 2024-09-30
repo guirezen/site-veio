@@ -1,9 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import { HeaderStyled, ItensList, List, ListConteiner, LogoConteiner, Navbar, RedSquary } from "./styles";
 import NavbarMenu from "../Navbar";
+import LanguageSelect from "../LanguageSelect";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
     const param = useLocation().pathname
+    const { t } = useTranslation()
 
     return (
         <HeaderStyled pathname={param}>
@@ -24,13 +27,13 @@ export default function Header() {
                                 className="botoes-menu-superior"
                                 to={'/sobre'}
                             >
-                                <ItensList>SOBRE</ItensList>
+                                <ItensList>{t('optionsMenu1')}</ItensList>
                             </Link>
                             <Link
                                 className="botoes-menu-superior"
                                 to={'/obras'}
                             >
-                                <ItensList>OBRAS</ItensList>
+                                <ItensList>{t('optionsMenu2')}</ItensList>
                             </Link>
                         </div>
                         <div>
@@ -38,15 +41,16 @@ export default function Header() {
                                 className="botoes-menu-superior"
                                 to={'/pelomundo'}
                             >
-                                <ItensList>PELO MUNDO</ItensList>
+                                <ItensList>{t('optionsMenu3')}</ItensList>
                             </Link>
                             <Link
                                 className="botoes-menu-superior"
                                 to={'/#ancoraContatos'}
                             >
-                                <ItensList>CONTATO</ItensList>
+                                <ItensList>{t('optionsMenu4')}</ItensList>
                             </Link>
                         </div>
+                        <LanguageSelect />
                     </List>
                     <NavbarMenu />
                 </ListConteiner>

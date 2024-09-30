@@ -1,9 +1,11 @@
 import ImageDescription from "../../Components/ImageDescription";
 import { BannerConteiner, ConteinerInConteudo, ConteudoConteiner, Main, TitleConteiner } from "./styles";
 import pelomundo from "../../Utils/pelomundo.json"
+import { useTranslation } from "react-i18next";
 
 export default function PeloMundo() {
     const gallery = pelomundo.gallery;
+    const { t } = useTranslation();
 
     return (
         <div>
@@ -11,19 +13,13 @@ export default function PeloMundo() {
             <Main>
                 <TitleConteiner>
                     <div>
-                        <h1>A obra de Véio em cartaz no Brasil e no mundo</h1>
-                        <span>Por Julia Katiene</span>
+                        <h1>{t('titleForWorld')}</h1>
+                        <span>{t('about')}</span>
                     </div>
                 </TitleConteiner>
                 <ConteudoConteiner>
                     <ConteinerInConteudo>
-                        <p className="p-margin-bt">
-                            A primeira exposição de Véio aconteceu em 1982 em sua cidade natal Nossa
-                            Senhora da Glória/SE, depois disso começou a desbravar o Brasil: São Paulo,
-                            Minas Gerais, Bahia, Rio de Janeiro, Brasília, Recife, etc.
-                            Muitos anos depois sua arte era admirada pelo mundo: França, Itália, Suiça,
-                            Estados Unidos e Londres.
-                        </p>
+                        <p className="p-margin-bt">{t('world1')}</p>
                         {gallery.map(viagem => (
                             <ImageDescription 
                                 urlImage={viagem.urlImage}

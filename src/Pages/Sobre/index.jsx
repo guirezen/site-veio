@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { BannerConteiner, ConteinerInConteudo, ConteudoConteiner, Image, Main, TitleConteiner } from "./styles";
 
 export default function PageSobre() {
+    const { t } = useTranslation();
 
     return (
         <div>
@@ -8,17 +10,13 @@ export default function PageSobre() {
             <Main>
                 <TitleConteiner>
                     <div>
-                        <h1>A história do artista Cícero Alves dos Santos, Véio!</h1>
-                        <span>Por Julia Katiene</span>
+                        <h1>{t('titleAbout')}</h1>
+                        <span>{t('about')}</span>
                     </div>
                 </TitleConteiner>
                 <ConteudoConteiner>
                     <ConteinerInConteudo>
-                        <p className="p-margin-bt">
-                            O apelido Véio nasceu quando Cícero Alves dos Santos tinha apenas cinco anos de idade,
-                            devido a um interesse constante em estar entre os mais velhos e absorver todo o saber
-                            popular que o sertão sergipano tinha enraizado.
-                        </p>
+                        <p className="p-margin-bt">{t('about1')}</p>
                         <div className="center-image">
                             <Image
                                 src="./Assets/image.png"
@@ -26,19 +24,11 @@ export default function PageSobre() {
                             />
                         </div>
                         <div>
-                            <span>
-                                Véio em sua oficina na cidade de Nossa Senhora da Glória/SE
-                            </span>
+                            <span>{t('about2')}</span>
                         </div>
-                        <p className="p-margin-bt">
-                            Diferente de todos os homens da sua geração que estavam predestinados a trabalhar na roça, o sábio sertão traçou planos diferentes para Cícero, seu traço fino esculpiu um futuro bem diferente e marcou com o seu canivete toda a história de Nossa Senhora da Glória.
-                        </p>
-                        <p className="p-margin-bt">
-                            Sem nunca ter observado o trabalho de outros artistas, num ambiente rural, em que o único contato com o mundo exterior era feito através do rádio, ele começou a moldar primeiro em cera de abelha depois em madeira. A missão de Véio era introduzir este novo conceito ao seu povo, o qual chamamos de “Arte”.
-                        </p>
-                        <p className="p-margin-bt">
-                            Hoje sua história já foi mostrada em  documentários, reportagens, livros, revistas, rodas de conversas. Recebeu o título de Mestre dos Saberes e Doutor Honoris Causa pela Universidade Federal de Sergipe, ocupa a Décima cadeira da Academia Gloriense de Letras e suas obras estão espalhadas  pelo Brasil e o mundo, na Pinacoteca de São Paulo, Museu do homem do nordeste em Recife, Museu de Belas Artes Rio de Janeiro, Fundação Cartier em Paris, The Armory Show New York, etc.
-                        </p>
+                        <p className="p-margin-bt">{t('about3')}</p>
+                        <p className="p-margin-bt">{t('about4')}</p>
+                        <p className="p-margin-bt">{t('about5')}</p>
                     </ConteinerInConteudo>
                 </ConteudoConteiner>
             </Main>

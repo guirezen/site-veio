@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useObrasContext } from "../../Common/Context/Obras"
 import { ConteinerFilterList } from "./styles"
 import { Box, FormControl, InputLabel, MenuItem, Select, styled } from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 const CustomBox = styled(Box)(({ theme }) => ({
     [theme.breakpoints.up("md")]: {
@@ -14,6 +15,7 @@ export default function FilterList() {
         selectedFilter,
         setSelectedFilter
     } = useObrasContext()
+    const { t } = useTranslation();
 
     const handleChange = (event) => {
         setSelectedFilter(event.target.value);
@@ -31,9 +33,7 @@ export default function FilterList() {
                     checked={selectedFilter === 'todos'}
                     onChange={(event) => setSelectedFilter(event.target.value)}
                 />
-                <label htmlFor='todos'>
-                    Todos
-                </label>
+                <label htmlFor='todos'>{t('filtersStem')}</label>
                 <input
                     type="radio"
                     className="input-filter"
@@ -43,9 +43,7 @@ export default function FilterList() {
                     checked={selectedFilter === 'fechado'}
                     onChange={(event) => setSelectedFilter(event.target.value)}
                 />
-                <label htmlFor='troncosFechados'>
-                    Troncos Fechados
-                </label>
+                <label htmlFor='troncosFechados'>{t('filtersStem2')}</label>
                 <input
                     type="radio"
                     className="input-filter"
@@ -55,9 +53,7 @@ export default function FilterList() {
                     checked={selectedFilter === 'aberto'}
                     onChange={(event) => setSelectedFilter(event.target.value)}
                 />
-                <label htmlFor='troncosAbertos'>
-                    Troncos Abertos
-                </label>
+                <label htmlFor='troncosAbertos'>{t('filtersStem3')}</label>
             </ConteinerFilterList>
             <CustomBox sx={{ minWidth: 200 }}>
                 <FormControl fullWidth>

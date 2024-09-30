@@ -1,0 +1,110 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+// Defina as traduções
+const resources = {
+    pt: {
+        translation: {
+            mainTitle: `O  IMAGINÁ- RIO DE  VÉIO`,
+            optionsMenu1: 'SOBRE',
+            optionsMenu2: 'OBRAS',
+            optionsMenu3: 'PELO MUNDO',
+            optionsMenu4: 'CONTATO',
+            titleWorksHome: 'OBRAS',
+            buttonSeeAllsWorks: 'VER TODOS',
+            titleContacts: 'CONTATO',
+            titleEmail: 'Nos envie um email',
+            titleWhatsapp: 'Fale pelo whatsapp',
+            footerDescription: 'Site desenvolvido por Rafael Oliva e Guilherme Rezende.',
+            titleAbout: 'A história do artista Cícero Alves dos Santos, Véio!',
+            about: 'Por Julia Katiene',
+            about1: 'O apelido Véio nasceu quando Cícero Alves dos Santos tinha apenas cinco anos de idade, devido a um interesse constante em estar entre os mais velhos e absorver todo o saber popular que o sertão sergipano tinha enraizado.',
+            about2: 'O apelido Véio nasceu quando Cícero Alves dos Santos tinha apenas cinco anos de idade, devido a um interesse constante em estar entre os mais velhos e absorver todo o saber popular que o sertão sergipano tinha enraizado.',
+            about3: 'Diferente de todos os homens da sua geração que estavam predestinados a trabalhar na roça, o sábio sertão traçou planos diferentes para Cícero, seu traço fino esculpiu um futuro bem diferente e marcou com o seu canivete toda a história de Nossa Senhora da Glória.',
+            about4: 'Sem nunca ter observado o trabalho de outros artistas, num ambiente rural, em que o único contato com o mundo exterior era feito através do rádio, ele começou a moldar primeiro em cera de abelha depois em madeira. A missão de Véio era introduzir este novo conceito ao seu povo, o qual chamamos de “Arte”.',
+            about5: 'Hoje sua história já foi mostrada em documentários, reportagens, livros, revistas, rodas de conversas. Recebeu o título de Mestre dos Saberes e Doutor Honoris Causa pela Universidade Federal de Sergipe, ocupa a Décima cadeira da Academia Gloriense de Letras e suas obras estão espalhadas pelo Brasil e o mundo, na Pinacoteca de São Paulo, Museu do homem do nordeste em Recife, Museu de Belas Artes Rio de Janeiro, Fundação Cartier em Paris, The Armory Show New York, etc.',
+            filtersStem: 'TODOS',
+            filtersStem2: 'Troncos Fechados',
+            filtersStem3: 'Troncos Abertos',
+            titleForWorld: 'A obra de Véio em cartaz no Brasil e no mundo',
+            world1: 'A primeira exposição de Véio aconteceu em 1982 em sua cidade natal Nossa Senhora da Glória/SE, depois disso começou a desbravar o Brasil: São Paulo, Minas Gerais, Bahia, Rio de Janeiro, Brasília, Recife, etc. Muitos anos depois sua arte era admirada pelo mundo: França, Itália, Suiça, Estados Unidos e Londres.',
+            workPopup: 'DETALHES DA OBRA',
+            otherWorks: 'OUTRAS OBRAS',
+            yearWork: 'Ano',
+            medidasWork: 'Medida',
+        },
+    },
+    en: {
+        translation: {
+            mainTitle: `IMAGINARY OF THE VÉIO`,
+            optionsMenu1: 'ABOUT',
+            optionsMenu2: 'WORKS',
+            optionsMenu3: 'THE WORLD',
+            optionsMenu4: 'CONTACT',
+            titleWorksHome: 'WORKS',
+            buttonSeeAllsWorks: 'SEE ALL',
+            titleContacts: 'CONTACT',
+            titleEmail: 'Send us an email',
+            titleWhatsapp: 'Chat via WhatsApp',
+            footerDescription: 'Website developed by Rafael Oliva and Guilherme Rezende.',
+            titleAbout: 'The story of the artist Cícero Alves dos Santos, Véio!',
+            about: 'By Julia Katiene',
+            about1: 'The nickname "Véio" was born when Cícero Alves dos Santos was only five years old, due to his constant interest in being among older people and absorbing all the popular wisdom deeply rooted in the Sergipe backlands.',
+            about2: 'The nickname "Véio" was born when Cícero Alves dos Santos was only five years old, due to his constant interest in being among older people and absorbing all the popular wisdom deeply rooted in the Sergipe backlands.',
+            about3: 'Unlike all the men of his generation, who were destined to work in the fields, the wise backlands had different plans for Cícero. His fine craftsmanship carved out a very different future and marked the history of Nossa Senhora da Glória with his knife.',
+            about4: 'Without ever having observed the work of other artists, in a rural environment where the only contact with the outside world was through the radio, he began to first mold with beeswax, and later with wood. Véio’s mission was to introduce this new concept to his people, which we call “Art”.',
+            about5: 'Today, his story has been featured in documentaries, reports, books, magazines, and discussions. He has received the title of Master of Knowledge and an honorary doctorate from the Federal University of Sergipe, holds the tenth chair of the Gloriense Academy of Letters, and his works are spread across Brazil and the world, in the Pinacoteca of São Paulo, the Museum of the Man of the Northeast in Recife, the Museum of Fine Arts in Rio de Janeiro, the Cartier Foundation in Paris, The Armory Show in New York, and more.',
+            filtersStem: 'ALL',
+            filtersStem2: ' Closed Trunks',
+            filtersStem3: 'Open Trunks',
+            titleForWorld: 'Véio’s work on display in Brazil and the world',
+            world1: 'Véio’s first exhibition took place in 1982 in his hometown of Nossa Senhora da Glória/SE, and after that, he began to explore Brazil: São Paulo, Minas Gerais, Bahia, Rio de Janeiro, Brasília, Recife, etc. Many years later, his art was admired worldwide: France, Italy, Switzerland, the United States, and London.',
+            workPopup: 'WORK DETAILS',
+            otherWorks: 'OTHER WORKS',
+            yearWork: 'Year',
+            medidasWork: 'Measure',
+        },
+    },
+    es: {
+        translation: {
+            mainTitle: `EL IMAGINA-RIO DE VÉIO`,
+            optionsMenu1: 'ACERCA DE',
+            optionsMenu2: 'TRABAJAS',
+            optionsMenu3: 'EL MUNDO',
+            optionsMenu4: 'CONTACTO',
+            titleWorksHome: 'OBRAS',
+            buttonSeeAllsWorks: 'VER TODO',
+            titleContacts: 'CONTACTO',
+            titleEmail: 'Envíanos un correo electrónico',
+            titleWhatsapp: 'Habla por WhatsApp',
+            footerDescription: 'Sitio web desarrollado por Rafael Oliva y Guilherme Rezende.',
+            titleAbout: 'La historia del artista Cícero Alves dos Santos, Véio!',
+            about: 'Por Julia Katiene',
+            about1: 'El apodo "Véio" nació cuando Cícero Alves dos Santos tenía solo cinco años, debido a su constante interés en estar entre los mayores y absorber todo el saber popular profundamente arraigado en el sertón de Sergipe.',
+            about2: 'El apodo "Véio" nació cuando Cícero Alves dos Santos tenía solo cinco años, debido a su constante interés en estar entre los mayores y absorber todo el saber popular profundamente arraigado en el sertón de Sergipe.',
+            about3: 'A diferencia de todos los hombres de su generación, que estaban destinados a trabajar en el campo, el sabio sertón trazó planes diferentes para Cícero. Su fina destreza esculpió un futuro muy diferente y dejó su huella con su cuchillo en toda la historia de Nossa Senhora da Glória.',
+            about4: 'Sin haber observado el trabajo de otros artistas, en un ambiente rural donde el único contacto con el mundo exterior era a través de la radio, comenzó a modelar primero con cera de abejas y luego con madera. La misión de Véio era introducir este nuevo concepto a su gente, al que llamamos "Arte".',
+            about5: 'Hoy en día, su historia ha sido mostrada en documentales, reportajes, libros, revistas y conversaciones. Ha recibido el título de Maestro del Saber y Doctor Honoris Causa por la Universidad Federal de Sergipe, ocupa la décima silla de la Academia Gloriense de Letras y sus obras están esparcidas por Brasil y el mundo, en la Pinacoteca de São Paulo, el Museo del Hombre del Nordeste en Recife, el Museo de Bellas Artes de Río de Janeiro, la Fundación Cartier en París, The Armory Show en Nueva York, etc.',
+            filtersStem: 'TODO',
+            filtersStem2: 'Baúles Cerrados',
+            filtersStem3: 'Baúles Abiertos',
+            titleForWorld: 'La obra de Véio en exhibición en Brasil y el mundo',
+            world1: 'La primera exposición de Véio tuvo lugar en 1982 en su ciudad natal, Nossa Senhora da Glória/SE. A partir de ahí, comenzó a explorar Brasil: São Paulo, Minas Gerais, Bahía, Río de Janeiro, Brasilia, Recife, etc. Muchos años después, su arte fue admirado en todo el mundo: Francia, Italia, Suiza, Estados Unidos y Londres.',
+            workPopup: 'DETALLES DEL TRABAJO',
+            otherWorks: 'OTRAS OBRAS',
+            yearWork: 'Año',
+            medidasWork: 'Medida',
+        },
+    },
+};
+
+// Inicializando o i18next
+i18n.use(initReactI18next).init({
+    resources,
+    lng: 'pt', // Idioma padrão
+    interpolation: {
+        escapeValue: false, // react já previne injeção de XSS
+    },
+});
+
+export default i18n;
